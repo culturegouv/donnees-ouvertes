@@ -23,9 +23,8 @@ Elle permet :
 
 👉 En résumé :
 
-data.gouv.fr = la gestion et la publication des jeux de données ;
-
-culture.data.gouv.fr = la visualisation et la valorisation des données culturelles.
+* data.gouv.fr = la gestion et la publication des jeux de données ;
+* culture.data.gouv.fr = la visualisation et la valorisation des données culturelles.
 
 ### 👤 2. Obtenir les accès éditeur sur data.gouv.fr
 
