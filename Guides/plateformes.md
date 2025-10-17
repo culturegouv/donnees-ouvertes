@@ -19,3 +19,12 @@ Elle permet :
 - **culture.data.gouv.fr** = la visualisation et la valorisation des données culturelles.  
 
 ---
+---
+
+**Guides :**  
+[1. Les plateformes](../Guides/plateformes.md) •  
+[2. S’inscrire](../Guides/inscription.md) •  
+[3. Publier / modifier](../Guides/publier_modifier.md) •  
+[4. Accompagnement](../Guides/accompagnement_contacts.md)  
+
+[⬆️ Retour au sommaire principal](../README.md)
