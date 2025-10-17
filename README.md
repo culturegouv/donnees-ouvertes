@@ -1,7 +1,10 @@
 # Données ouvertes du ministère de la Culture  
 
-Répertoire dédié à l’ouverture des données du ministère de la Culture et à l’utilisation des plateformes [culture.data.gouv.fr](https://culture.data.gouv.fr) et [data.gouv.fr](https://www.data.gouv.fr).  
-Ce dépôt a pour objectif d’accompagner les agents et opérateurs du ministère dans la **publication, la circulation et la valorisation des données culturelles ouvertes**.
+Ce répertoire dédié à l’ouverture des données du ministère de la Culture et à l’utilisation des plateformes [culture.data.gouv.fr](https://culture.data.gouv.fr) et [data.gouv.fr](https://www.data.gouv.fr).  
+
+Il a pour objectif d’accompagner les agents et opérateurs du ministère dans la **publication, la circulation et la valorisation des données culturelles ouvertes**.  
+
+Les guides proposés ici s’appuient sur la **documentation officielle de [data.gouv.fr](https://guides.data.gouv.fr)**, tout en apportant des **éléments de contextualisation, d’organisation et de bonnes pratiques propres au ministère de la Culture**.  
 
 ---
 
