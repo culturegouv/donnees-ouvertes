@@ -8,7 +8,7 @@ Elle permet :
 - de **déposer les fichiers associés** (appelés « ressources ») ou d’**automatiser leur alimentation**.  
 
 ### culture.data.gouv.fr  
-C’est la **vitrine thématique** des données culturelles ouvertes.  
+C’est la **vitrine thématique** des données ouvertes de la Culture.  
 Elle permet :  
 - de **visualiser et explorer** les jeux publiés par le ministère et ses opérateurs ;  
 - d’offrir une **interface simplifiée** pour les réutilisateurs (chercheurs, journalistes, développeurs, citoyens) ;  
