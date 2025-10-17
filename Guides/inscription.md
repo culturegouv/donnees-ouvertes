@@ -7,3 +7,12 @@
    - créer, modifier ou mettre à jour les jeux de données du ministère ;  
    - enrichir les métadonnées (titre, description, mots-clés, fréquence de publication) ;  
    - ajouter, remplacer ou supprimer les fichiers associés.  
+---
+
+**Guides :**  
+[1. Les plateformes](../Guides/plateformes.md) •  
+[2. S’inscrire](../Guides/inscription.md) •  
+[3. Publier / modifier](../Guides/publier_modifier.md) •  
+[4. Accompagnement](../Guides/accompagnement_contacts.md)  
+
+[⬆️ Retour au sommaire principal](../README.md)
