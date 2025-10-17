@@ -1,4 +1,4 @@
-#Publier ses données sur data.gouv.fr
+# Publier ses données sur data.gouv.fr
 ##Mode d’emploi à destination des agents et opérateurs du ministère de la Culture
 
 ### 🌐 1. Comprendre les plateformes
