@@ -20,7 +20,7 @@ L’accès à l’interface *data.gouv.fr* permet de :
 
 Selon vos modalités de publication, deux situations peuvent se présenter :  
 
-### 🧠 Cas 1 : Publication automatisée  
+### Cas 1 : Publication automatisée  
 
 Si un **système de publication automatisé** est en place (via les **serveurs du ministère** ou l’infrastructure **S3 interne**),  
 le dépôt des fichiers se fait **automatiquement** vers *data.gouv.fr*.  
@@ -38,7 +38,7 @@ Cette articulation garantit une **mise à jour fiable et continue** des données
 
 ---
 
-### 🖐️ Cas 2 : Publication manuelle  
+### Cas 2 : Publication manuelle  
 
 Lorsque la publication n’est **pas automatisée**, vous pouvez :  
 - **déposer manuellement** le fichier via l’interface *data.gouv.fr* (méthode la plus courante) ;  
@@ -66,6 +66,7 @@ Pour garantir la qualité, la clarté et la découvrabilité des données publi�
 
 💡 *Une donnée bien décrite est une donnée mieux comprise, réutilisée et valorisée.*  
 
+![Interface de gestion d’un jeu de données sur data.gouv.fr](https://github.com/culturegouv/donnees-ouvertes/blob/main/librairie-image/interface_dataset.png?raw=true)
 
 ---
 
