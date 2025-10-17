@@ -65,3 +65,15 @@ Pour garantir la qualité, la clarté et la découvrabilité des données publi�
 - **Soignez les titres et les formats de fichiers** (ex. : `liste_musees_2025.csv`) pour renforcer la cohérence et la traçabilité.  
 
 💡 *Une donnée bien décrite est une donnée mieux comprise, réutilisée et valorisée.*  
+
+
+---
+
+**Guides :**  
+[1. Les plateformes](../Guides/plateformes.md) •  
+[2. S’inscrire](../Guides/inscription.md) •  
+[3. Publier / modifier](../Guides/publier_modifier.md) •  
+[4. Accompagnement](../Guides/accompagnement_contacts.md)  
+
+[⬆️ Retour au sommaire principal](../README.md)
+
