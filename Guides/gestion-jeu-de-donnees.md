@@ -27,7 +27,7 @@ data.gouv.fr = la gestion et la publication des jeux de données ;
 
 culture.data.gouv.fr = la visualisation et la valorisation des données culturelles.
 
-###👤 2. Obtenir les accès éditeur sur data.gouv.fr
+### 👤 2. Obtenir les accès éditeur sur data.gouv.fr
 
 Créez votre compte via ce lien : S’enregistrer sur data.gouv.fr
 
