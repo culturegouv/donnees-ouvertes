@@ -29,7 +29,7 @@ Contacts, ressources, formations et aide du **Département des politiques numér
 ### 🌐 Plateformes principales  
 
 #### [culture.data.gouv.fr](https://culture.data.gouv.fr)  
-> **La plateforme thématique du ministère de la Culture.**  
+> **La plateforme des données ouvertes de la culture.**  
 > Elle permet d’explorer, visualiser et valoriser les données culturelles ouvertes produites par les services et opérateurs du ministère.  
 > C’est la vitrine de l’ouverture des données culturelles.  
 
