@@ -130,14 +130,8 @@ Lorsque vous modifiez un jeu ou un fichier :
 Le Département des politiques numériques culturelles (DPNC) du Service du numérique vous accompagne dans :
 
 * la prise en main de l’interface data.gouv.fr ;
-
 * la structuration et l’enrichissement des métadonnées ;
-
 * la mise en place de publications automatisées via les infrastructures ministérielles ;
-
 * la valorisation et la visibilité des jeux de données sur culture.data.gouv.fr.
-
-
-📧 Contact : circulation.donnees@culture.gouv.fr
 
 📚 Ressources : guide pratique, tutoriels, modèles de fiches et sessions de formation internes.
