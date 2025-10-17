@@ -90,16 +90,11 @@ ou utiliser l’API data.gouv.fr pour mettre à jour le fichier via un script ou
 
 À chaque mise à jour, vous devez :
 
-Vous connecter sur data.gouv.fr
- ;
-
-Ouvrir le jeu de données concerné ;
-
-Cliquer sur « Remplacer la ressource » pour déposer la nouvelle version du fichier ;
-
-Mettre à jour la description ou la fréquence si nécessaire ;
-
-Enregistrer les modifications.
+* Vous connecter sur data.gouv.fr ;
+* Ouvrir le jeu de données concerné ;
+* Cliquer sur « Remplacer la ressource » pour déposer la nouvelle version du fichier ;
+* Mettre à jour la description ou la fréquence si nécessaire ;
+* Enregistrer les modifications.
 
 Les changements seront automatiquement répercutés sur la plateforme culture.data.gouv.fr.
 
@@ -107,13 +102,10 @@ Les changements seront automatiquement répercutés sur la plateforme culture.da
 
 Pour garantir la qualité, la clarté et la découvrabilité des données publiées :
 
-Rédigez une description claire et contextualisée, accompagnée d’une courte description (résumé) pour faciliter la lecture rapide du contenu ;
-
-Ajoutez la fréquence de publication (unique, annuelle, mensuelle, temps réel...) afin d’informer les réutilisateurs sur le rythme des mises à jour ;
-
-Ajoutez des mots-clés (tags) pertinents pour améliorer la recherche et la découvrabilité du jeu de données sur culture.data.gouv.fr
- et data.gouv.fr
- ;
+* Rédigez une description claire et contextualisée, accompagnée d’une courte description (résumé) pour faciliter la lecture rapide du contenu ;
+* Ajoutez la fréquence de publication (unique, annuelle, mensuelle, temps réel...) afin d’informer les réutilisateurs sur le rythme des mises à jour ;
+* Ajoutez des mots-clés (tags) pertinents pour améliorer la recherche et la découvrabilité du jeu de données sur culture.data.gouv.fr
+ et data.gouv.fr ;
 
 Soignez les titres et les formats de fichiers (ex. : liste_musees_2025.csv) pour renforcer la cohérence et la traçabilité des publications.
 
@@ -124,16 +116,12 @@ Se connecter et mettre à jour une ressource
 
 Lorsque vous modifiez un jeu ou un fichier :
 
-Se connecter sur data.gouv.fr
+* Se connecter sur data.gouv.fr
  ;
-
-Ouvrir le jeu de données concerné ;
-
-Cliquer sur « Remplacer la ressource » pour mettre à jour le fichier ;
-
-Mettre à jour la description si nécessaire (titre, fréquence, mots-clés, etc.) ;
-
-Enregistrer : la version actualisée sera automatiquement visible sur culture.data.gouv.fr
+* Ouvrir le jeu de données concerné ;
+* Cliquer sur « Remplacer la ressource » pour mettre à jour le fichier ;
+* Mettre à jour la description si nécessaire (titre, fréquence, mots-clés, etc.) ;
+* Enregistrer : la version actualisée sera automatiquement visible sur culture.data.gouv.fr
 .
 
 💡 Pensez à vérifier la cohérence entre la description du jeu et les ressources associées avant validation.
