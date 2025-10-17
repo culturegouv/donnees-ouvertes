@@ -52,11 +52,10 @@ Contacts, ressources, formations et aide du **Département des politiques numér
 
 ### 🚀 Pour aller plus loin  
 
-- 📘 **[Guide pratique “Ouvrir et diffuser les données et contenus culturels” (PDF)](https://www.culture.gouv.fr/content/download/...)**  
-- 🧩 **Outil pédagogique “Droits de diffusion”** (aide à la gestion des droits associés aux contenus)  
-- 📊 **[Réutiliser des données – guides.data.gouv.fr](https://guides.data.gouv.fr/reutiliser)**  
-- 🧠 **[API tabulaire data.gouv.fr (beta)](https://apidatagouv.readthedocs.io)**  
-
+- [Guide pratique “Ouvrir et diffuser les données et contenus culturels” (PDF)](https://www.culture.gouv.fr/Media/Thematiques/Innovation-numerique/Folder/Livrables-GT-Numerisation/Numerisation-et-valorisation-des-contenus-culturels-guide-ouverture-et-reutilisation-des-informations-publiques-numeriques-du-secteur-culturel)   
+- [Outil pédagogique “Droits de diffusion”](https://www.culture.gouv.fr/droitsdediffusion/)   
+- [Réutiliser des données – guides.data.gouv.fr](https://guides.data.gouv.fr/reutiliser-des-donnees)   
+- [API tabulaire data.gouv.fr (beta)](https://www.data.gouv.fr/dataservices/api-tabulaire-data-gouv-fr-beta/)  
 ---
 
 ### 💬 Contacts et entraide  
