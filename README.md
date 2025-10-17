@@ -7,16 +7,16 @@ Ce dépôt a pour objectif d’accompagner les agents et opérateurs du ministè
 
 ## 📘 Guides disponibles  
 
-### [1. Les plateformes](Guides/01_les_plateformes.md)  
+### [1. Les plateformes](Guides/plateformes.md)  
 Comprendre le rôle et l’articulation entre *data.gouv.fr* et *culture.data.gouv.fr*.  
 
-### [2. S’inscrire](Guides/02_s_inscrire.md)  
+### [2. S’inscrire](Guides/inscription.md)  
 Créer son compte, rejoindre l’organisation “Ministère de la Culture” sur *data.gouv.fr* et obtenir un profil éditeur.  
 
-### [3. Publier ou modifier un jeu de données](Guides/03_publier_modifier.md)  
+### [3. Publier ou modifier un jeu de données](Guides/publier_modifier.md)  
 Étapes de publication, gestion des ressources, automatisation et bonnes pratiques de documentation.  
 
-### [4. Accompagnement et contacts](Guides/04_accompagnement_contacts.md)  
+### [4. Accompagnement et contacts](Guides/accompagnement_contacts.md)  
 Contacts, ressources, formations et aide du **Département des politiques numériques culturelles (DPNC)**.  
 
 ---
