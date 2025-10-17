@@ -1,7 +1,9 @@
-🇫🇷 Publier ses données sur data.gouv.fr
-Mode d’emploi à destination des agents et opérateurs du ministère de la Culture
-🌐 1. Comprendre les plateformes
-data.gouv.fr
+#Publier ses données sur data.gouv.fr
+##Mode d’emploi à destination des agents et opérateurs du ministère de la Culture
+
+### 🌐 1. Comprendre les plateformes
+
+#### data.gouv.fr
 
 C’est la plateforme nationale d’ouverture des données publiques.
 Elle permet :
@@ -12,7 +14,7 @@ d’en décrire le contenu, le contexte et la fréquence de publication ;
 
 de déposer les fichiers associés (appelés « ressources ») ou d’automatiser leur alimentation.
 
-culture.data.gouv.fr
+#### culture.data.gouv.fr
 
 C’est la vitrine thématique des données culturelles ouvertes.
 Elle permet :
@@ -29,7 +31,7 @@ data.gouv.fr = la gestion et la publication des jeux de données ;
 
 culture.data.gouv.fr = la visualisation et la valorisation des données culturelles.
 
-👤 2. Obtenir les accès éditeur sur data.gouv.fr
+###👤 2. Obtenir les accès éditeur sur data.gouv.fr
 
 Créez votre compte via ce lien : S’enregistrer sur data.gouv.fr
 
@@ -45,7 +47,7 @@ modifier ou compléter les métadonnées (titre, description, mots-clés, fréqu
 
 ajouter ou remplacer les fichiers associés.
 
-📦 3. Gérer ses jeux de données
+### 📦 3. Gérer ses jeux de données
 Qu’est-ce qu’un jeu de données ?
 
 Un jeu de données correspond à un ensemble cohérent de fichiers (par exemple : la liste des musées de France, les festivals soutenus, les monuments historiques classés, etc.).
@@ -65,11 +67,11 @@ ajouter, remplacer ou supprimer les ressources (fichiers) associées ;
 
 paramétrer la licence, la visibilité et les producteurs.
 
-📤 4. Publication d’une ressource
+### 📤 4. Publication d’une ressource
 
 Lors de la mise à jour ou de la création d’un jeu de données, deux cas de figure se présentent selon les modalités de publication mises en place.
 
-🧠 Cas 1 : Publication automatisée
+#### Cas 1 : Publication automatisée
 
 Si un système de publication automatisé est en place (via les serveurs du ministère ou l’infrastructure S3 interne),
 le dépôt des fichiers se fait automatiquement vers data.gouv.fr.
@@ -78,19 +80,15 @@ le dépôt des fichiers se fait automatiquement vers data.gouv.fr.
 
 Le gestionnaire du jeu de données conserve toutefois la possibilité de modifier les informations descriptives (métadonnées) directement depuis l’interface de data.gouv.fr :
 
-titre,
-
-description,
-
-mots-clés (tags),
-
-fréquence de mise à jour,
-
-licence ou producteurs associés.
+* titre,
+* description,
+* mots-clés (tags),
+* fréquence de mise à jour,
+* licence ou producteurs associés.
 
 Cette articulation garantit une mise à jour fiable et continue des données, tout en maintenant une qualité éditoriale et une cohérence de présentation sur culture.data.gouv.fr.
 
-🖐️ Cas 2 : Publication manuelle
+#### 🖐️ Cas 2 : Publication manuelle
 
 Lorsque la publication n’est pas automatisée, vous disposez de deux options :
 
@@ -113,7 +111,7 @@ Enregistrer les modifications.
 
 Les changements seront automatiquement répercutés sur la plateforme culture.data.gouv.fr.
 
-📝 Bonnes pratiques
+##### 📝 Bonnes pratiques
 
 Pour garantir la qualité, la clarté et la découvrabilité des données publiées :
 
@@ -129,7 +127,7 @@ Soignez les titres et les formats de fichiers (ex. : liste_musees_2025.csv) pour
 
 💡 Une donnée bien décrite est une donnée mieux comprise, réutilisée et valorisée.
 
-🧭 5. En cas de mise à jour
+### 🧭 5. En cas de mise à jour
 Se connecter et mettre à jour une ressource
 
 Lorsque vous modifiez un jeu ou un fichier :
@@ -148,17 +146,18 @@ Enregistrer : la version actualisée sera automatiquement visible sur culture.da
 
 💡 Pensez à vérifier la cohérence entre la description du jeu et les ressources associées avant validation.
 
-🧩 6. Accompagnement et contacts
+### 🧩 6. Accompagnement et contacts
 
 Le Département des politiques numériques culturelles (DPNC) du Service du numérique vous accompagne dans :
 
-la prise en main de l’interface data.gouv.fr ;
+* la prise en main de l’interface data.gouv.fr ;
 
-la structuration et l’enrichissement des métadonnées ;
+* la structuration et l’enrichissement des métadonnées ;
 
-la mise en place de publications automatisées via les infrastructures ministérielles ;
+* la mise en place de publications automatisées via les infrastructures ministérielles ;
 
-la valorisation et la visibilité des jeux de données sur culture.data.gouv.fr.
+* la valorisation et la visibilité des jeux de données sur culture.data.gouv.fr.
+
 
 📧 Contact : circulation.donnees@culture.gouv.fr
 
