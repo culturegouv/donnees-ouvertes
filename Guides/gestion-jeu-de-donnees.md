@@ -8,22 +8,18 @@
 C’est la plateforme nationale d’ouverture des données publiques.
 Elle permet :
 
-de créer, gérer et mettre à jour les jeux de données du ministère ;
-
-d’en décrire le contenu, le contexte et la fréquence de publication ;
-
-de déposer les fichiers associés (appelés « ressources ») ou d’automatiser leur alimentation.
+* de créer, gérer et mettre à jour les jeux de données du ministère ;
+* d’en décrire le contenu, le contexte et la fréquence de publication ;
+* de déposer les fichiers associés (appelés « ressources ») ou d’automatiser leur alimentation.
 
 #### culture.data.gouv.fr
 
 C’est la vitrine thématique des données culturelles ouvertes.
 Elle permet :
 
-de visualiser et explorer les jeux publiés par le ministère et ses opérateurs ;
-
-d’offrir une interface simplifiée pour les réutilisateurs (chercheurs, journalistes, développeurs, citoyens) ;
-
-de valoriser les politiques culturelles et les initiatives territoriales.
+* de visualiser et explorer les jeux publiés par le ministère et ses opérateurs ;
+* d’offrir une interface simplifiée pour les réutilisateurs (chercheurs, journalistes, développeurs, citoyens) ;
+* de valoriser les politiques culturelles et les initiatives territoriales.
 
 👉 En résumé :
 
@@ -41,11 +37,9 @@ L’équipe du Département des politiques numériques culturelles (DPNC) valide
 
 Une fois validé, vous pourrez :
 
-créer de nouveaux jeux de données ;
-
-modifier ou compléter les métadonnées (titre, description, mots-clés, fréquence de publication) ;
-
-ajouter ou remplacer les fichiers associés.
+* créer de nouveaux jeux de données ;
+* modifier ou compléter les métadonnées (titre, description, mots-clés, fréquence de publication) ;
+* ajouter ou remplacer les fichiers associés.
 
 ### 📦 3. Gérer ses jeux de données
 Qu’est-ce qu’un jeu de données ?
@@ -61,11 +55,9 @@ Un même jeu peut comporter plusieurs ressources (par exemple un fichier par ann
 
 L’accès à l’interface data.gouv.fr permet de :
 
-modifier les informations générales relatives au jeu (titre, description, fréquence, mots-clés) ;
-
-ajouter, remplacer ou supprimer les ressources (fichiers) associées ;
-
-paramétrer la licence, la visibilité et les producteurs.
+* modifier les informations générales relatives au jeu (titre, description, fréquence, mots-clés) ;
+* ajouter, remplacer ou supprimer les ressources (fichiers) associées ;
+* paramétrer la licence, la visibilité et les producteurs.
 
 ### 📤 4. Publication d’une ressource
 
