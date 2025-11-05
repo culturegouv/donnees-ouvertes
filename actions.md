@@ -1,4 +1,6 @@
 # Itération – novembre 2025 ✨  
+<img width="827" height="434" alt="image" src="https://github.com/user-attachments/assets/ac7efe25-e8b7-4425-83e6-5e3e9b1b6e30" />
+
 
 La verticale *Culture* s’enrichit pour mieux faire connaître, partager et réutiliser les données culturelles publiques issues du **service public de l’État et des collectivités territoriales**.  
 
