@@ -30,6 +30,5 @@ Cette évolution simplifie le travail des producteurs, renforce la cohérence de
 
 ## 💬 Une démarche ouverte et collective  
 Vous souhaitez partager une idée, signaler une anomalie ou proposer une amélioration ?  
-📧 [data-snum@culture.gouv.fr](mailto:data-snum@culture.gouv.fr)  
+https://forum.data.gouv.fr/tag/culture
 
-Vous pouvez également rejoindre la démarche en tant que **testeur volontaire**, pour accompagner les prochaines évolutions de la verticale *Culture*.  
