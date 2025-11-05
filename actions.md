@@ -16,6 +16,7 @@ Une nouvelle **fonction de filtrage** permet d’explorer les jeux de données s
 La navigation entre la verticale *Culture* et le portail national *data.gouv.fr* est désormais **unifiée**.  
 
 > Un **bouton “Éditer”** est désormais visible sur chaque fiche de jeu de données pour les **producteurs autorisés**, leur permettant de **mettre à jour directement** les métadonnées et les fichiers depuis la verticale *Culture*.  
+<img width="704" height="423" alt="image" src="https://github.com/user-attachments/assets/6093d750-ca28-4f96-a237-27a1c317785a" />
 
 Cette évolution simplifie le travail des producteurs, renforce la cohérence de l’écosystème public de la donnée et favorise la **mise à jour en continu** des jeux culturels. 
 
