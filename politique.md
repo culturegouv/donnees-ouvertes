@@ -7,14 +7,17 @@ Il s'applique à créer les conditions d'une meilleure circulation, diffusion et
 
 ## La stratégie d'ouverture des données du ministère
 
-Le choix de rendre accessibles et réutilisables les données publiques s'inscrit dans une recherche du meilleur partage et d'une plus grande diffusion de l'information.  
-L’objectif est d’offrir la meilleure exploitation de ces données et leur plus large circulation.  
+Le choix de rendre accessibles et réutilisables les données publiques s’inscrit dans une volonté affirmée de partage, de transparence et de diffusion du savoir.
+Cette démarche vise à faire des données culturelles un levier de compréhension, d’innovation et de participation citoyenne.
+Elle traduit l’ambition du ministère de la Culture de bâtir une politique publique des données fondée sur la confiance, la qualité et l’ouverture.
 
-Cela pour permettre :
+Notre mission est de favoriser la réutilisation des données publiques.
+Elle se décline en quatre objectifs structurants :
 
-- l’évaluation des politiques publiques,  
-- l’amélioration et la transparence de l’action publique,  
-- la stimulation de la recherche et de l’innovation.  
+- Améliorer la découvrabilité des données ouvertes, pour permettre à chacun d’identifier et d’accéder plus aisément aux ressources culturelles disponibles ;
+- Favoriser la qualité des données ouvertes, en garantissant leur fiabilité, leur documentation et leur interopérabilité ;
+- Encourager la réutilisation des données ouvertes, en stimulant la recherche, la création de services innovants et l’émergence de nouveaux usages ;
+- Soutenir la transparence et l’accès à l’information, en contribuant à l’évaluation des politiques publiques et à la vitalité démocratique.
 
 L’ouverture des données et des contenus culturels doit s’organiser dans le respect :
 
@@ -46,21 +49,19 @@ Cette stratégie numérique de diffusion et de réutilisation des données publi
 
 ---
 
-## La plateforme des données ouvertes
+## Culture.data.gouv.fr - Plateforme des données ouvertes de la Culture
 
-Pour une meilleure valorisation, le ministère propose une plate-forme thématique des données culturelles ouvertes :  
-👉 [data.culture.gouv.fr](https://data.culture.gouv.fr), synchronisée avec la plateforme nationale [data.gouv.fr](https://www.data.gouv.fr).
+La plateforme **[culture.data.gouv.fr](https://culture.data.gouv.fr)** s’adresse à l’ensemble des **citoyens**.  
+Elle favorise la **découverte**, la **circulation** et la **réutilisation** des données culturelles publiques, au service d’une culture plus ouverte et partagée.  
 
-La plateforme **data.culture.gouv.fr** offre un espace de valorisation des ressources culturelles numériques — data-visualisations, cartographies, graphiques, images, réutilisations — à l’attention de :
+Elle répond aux besoins de :  
+- **citoyens et publics curieux**,  
+- **chercheurs et étudiants**,  
+- **journalistes et acteurs des médias**,  
+- **développeurs, entrepreneurs et entreprises culturelles**.  
 
-- tous les citoyens,  
-- chercheurs,  
-- étudiants,  
-- journalistes,  
-- développeurs,  
-- entreprises.
-
-Elle met à disposition des **API intégrées** et des **formats ouverts**.
+La plateforme met à disposition des **API intégrées**, des **formats ouverts** et des **outils de visualisation** facilitant la **transparence**, la **réutilisation** et **l’innovation** autour des données culturelles publiques.  
+Pensée comme un **espace commun de valorisation**, elle évolue en continu pour répondre aux attentes des usagers et accompagner la **circulation des données** au sein de l’écosystème culturel.
 
 ### Objectifs de la plateforme
 
