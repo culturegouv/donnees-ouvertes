@@ -138,10 +138,6 @@ Elle vise à **fédérer producteurs et usagers** dans un écosystème de donné
 📢 **Échanger avec la communauté**  
 Rejoignez le **[Forum Data Gouv – Tag Culture](https://forum.data.gouv.fr/tag/culture)** pour poser vos questions, partager vos usages ou contribuer aux discussions autour des données culturelles.  
 
-🛠 **Support technique**  
-Pour signaler un problème, une anomalie ou proposer un nouveau jeu de données :  
-[data-snum@culture.gouv.fr](mailto:data-snum@culture.gouv.fr)
-
 ---
 
 *Ministère de la Culture – Service du Numérique / Département des Politiques Numériques Culturelles*
