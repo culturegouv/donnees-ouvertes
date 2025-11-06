@@ -5,10 +5,11 @@ Il s'applique à créer les conditions d'une meilleure circulation, diffusion et
 
 ---
 
-## La stratégie Open Data du ministère
+## La stratégie d'ouverture des données du ministère
 
 Le choix de rendre accessibles et réutilisables les données publiques s'inscrit dans une recherche du meilleur partage et d'une plus grande diffusion de l'information.  
 L’objectif est d’offrir la meilleure exploitation de ces données et leur plus large circulation.  
+
 Cela pour permettre :
 
 - l’évaluation des politiques publiques,  
@@ -31,7 +32,7 @@ C’est pourquoi l'ouverture des données publiques a conduit à faire de la **r
 
 ---
 
-## Les six axes de la stratégie Open Data
+## Les six axes de la stratégie d'ouverture des données
 
 La stratégie Open Data du ministère de la Culture constitue l’un des fondements d’un service public culturel numérique.  
 Cette stratégie numérique de diffusion et de réutilisation des données publiques numériques du secteur culturel se construit autour de **six axes** :
