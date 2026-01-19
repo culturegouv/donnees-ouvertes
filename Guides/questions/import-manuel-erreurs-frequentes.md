@@ -45,4 +45,3 @@ Référence : https://annuaire-entreprises.data.gouv.fr/definitions/numero-siren
   - **Format de cellule** → **Personnalisé**
   - Masque : `000000000` (9 zéros)
 - Objectif : conserver les ** chiffres** et les **zéros initiaux**.
-https://annuaire-entreprises.data.gouv.fr/definitions/numero-siren
