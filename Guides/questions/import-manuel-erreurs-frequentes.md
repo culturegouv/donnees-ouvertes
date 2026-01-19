@@ -7,6 +7,7 @@ Cette fiche recense les erreurs les plus courantes lors de l’import manuel d�
 
 ## 2) Données géographiques
 - Pour les référencements territoriaux, s’appuyer sur le **Code officiel géographique (COG)** : https://www.insee.fr/fr/information/2560452
+Cette nomenclature de référence rassemble les codes et libellés, au 1er janvier de l’année en cours, des communes, cantons, arrondissements, départements, collectivités territoriales ayant les compétences départementales, régions et pays et territoires étrangers.
 
 ### 2.1) Code commune INSEE (COM) : privilégier le code commune INSEE (plutôt que le code postal)
 
