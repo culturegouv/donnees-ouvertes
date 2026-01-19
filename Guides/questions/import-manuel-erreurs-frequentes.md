@@ -12,16 +12,15 @@ Cette fiche recense les erreurs les plus courantes lors de l’import manuel d�
 
 - Pour identifier une commune, utiliser le **code commune INSEE** (variable `COM`).
 - Le **code postal** n’est pas recommandé : **un même code postal peut correspondre à plusieurs communes** (et inversement).
-Référence INSEE : https://www.insee.fr/fr/information/7766585
 
 #### Paramétrer le format sous Excel 
-Dans Excel, définir le format de cellule :
-Format de cellule → Spécial → Code postal
+Dans Excel, définir le format de cellule : **Format de cellule** → **Spécial** → **Code postal**
 Objectif : éviter la perte des zéros initiaux (ex. 06000 transformé en 6000).
 
 ### 2.2) Si le code postal est utilisé (non recommandé)
-- Dans Excel, définir le format de cellule :
-  - **Format de cellule** → **Spécial** → **Code postal**
+Le **code postal** n’est pas recommandé : **un même code postal peut correspondre à plusieurs communes** (et inversement).
+#### Paramétrer le format sous Excel 
+- Dans Excel, définir le format de cellule : **Format de cellule** → **Spécial** → **Code postal**
 - Objectif : éviter la perte des **zéros initiaux** (ex. `06000` transformé en `6000`).
 
 ## 3) SIRET (14 caractères)
