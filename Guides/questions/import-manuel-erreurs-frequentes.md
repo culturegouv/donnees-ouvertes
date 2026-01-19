@@ -5,9 +5,13 @@ Cette fiche recense les erreurs les plus courantes lors de l’import manuel d�
 ## 1) Privilégier le format CSV
 - Utiliser **CSV** (format ouvert, non propriétaire).
 
-## 2) Utiliser le code commune INSEE (plutôt que le code postal)
-- Pour les référencements territoriaux, privilégier le **code commune INSEE** plutôt que le **code postal**.  
-  Référence INSEE : https://www.insee.fr/fr/information/7766585
+## 2) Code commune (COG) : privilégier le code commune INSEE (plutôt que le code postal)
+
+- Pour les référencements territoriaux, s’appuyer sur le **Code officiel géographique (COG)**.
+- Pour identifier une commune, utiliser le **code commune INSEE** (variable `COM`).
+- Le **code postal** n’est pas recommandé : **un même code postal peut correspondre à plusieurs communes** (et inversement).
+
+Référence INSEE : https://www.insee.fr/fr/information/7766585
 
 ## 3) Si le code postal est utilisé (non recommandé)
 - Dans Excel, définir le format de cellule :
