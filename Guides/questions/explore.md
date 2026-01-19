@@ -61,11 +61,6 @@ Si `status` vaut `TO_ANALYSE_RESOURCE`, cela signifie que la ressource est **en 
 Les statuts exacts peuvent évoluer, mais on rencontre typiquement les étapes suivantes :
 
 - `TO_ANALYSE_RESOURCE` : la ressource est en file d’attente pour analyse.
-- `ANALYSING_RESOURCE` : analyse de la ressource en cours.
-- `TO_ANALYSE_CSV` / `ANALYSING_CSV` : analyse spécifique des contenus tabulaires (CSV).
-- `INSERTING_IN_DB` : ingestion en base (préparation de l’exploration).
-- `CONVERTING_TO_PARQUET` : conversion dans un format de diffusion (selon le cas).
-- `BACKOFF` : ralentissement temporaire (par exemple, limitation côté source).
 
 ---
 
