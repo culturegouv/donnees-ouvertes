@@ -5,7 +5,7 @@ Cette fiche recense les erreurs les plus courantes lors de l’import manuel d�
 ## 1) Privilégier le format CSV
 - Utiliser **CSV** (format ouvert, non propriétaire).
 
-## 2) Code commune (COG) : privilégier le code commune INSEE (plutôt que le code postal)
+## 2) Données géographiques : Code commune (COG) : privilégier le code commune INSEE (plutôt que le code postal)
 
 - Pour les référencements territoriaux, s’appuyer sur le **Code officiel géographique (COG)**.
 - Pour identifier une commune, utiliser le **code commune INSEE** (variable `COM`).
