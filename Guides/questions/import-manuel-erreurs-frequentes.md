@@ -29,3 +29,11 @@ Le **code postal** n’est pas recommandé : **un même code postal peut corresp
   - **Format de cellule** → **Personnalisé**
   - Masque : `00000000000000` (14 zéros)
 - Objectif : conserver les **14 chiffres** et les **zéros initiaux**.
+
+
+## 4) SIREN (9 caractères)
+- Dans Excel, définir le format de cellule :
+  - **Format de cellule** → **Personnalisé**
+  - Masque : `000000000` (9 zéros)
+- Objectif : conserver les ** chiffres** et les **zéros initiaux**.
+https://annuaire-entreprises.data.gouv.fr/definitions/numero-siren
