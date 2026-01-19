@@ -9,7 +9,7 @@ Exemple d'URL 2 :
 https://explore.data.gouv.fr/fr/datasets/695b8b6f6bf16db672fa28df/#/resources/e4761b32-c601-4ec9-b361-658315d07389
 
 
-2) Si le fichier ne s'affiche pas : 
+2) Si la vue Exploire ne s'affiche pas : 
 
 Vérifier que le crawler a terminer la tâche : https://crawler.data.gouv.fr/api/resources/**ID_ressource**
 
