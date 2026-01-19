@@ -6,9 +6,10 @@ Cette fiche recense les erreurs les plus courantes lors de l’import manuel d�
 - Utiliser **CSV** (format ouvert, non propriétaire).
 
 ## 2) Données géographiques
+- Pour les référencements territoriaux, s’appuyer sur le **Code officiel géographique (COG)** : https://www.insee.fr/fr/information/2560452
 
 ### Code commune INSEE (COM) : privilégier le code commune INSEE (plutôt que le code postal)
-- Pour les référencements territoriaux, s’appuyer sur le **Code officiel géographique (COG)**.
+
 - Pour identifier une commune, utiliser le **code commune INSEE** (variable `COM`).
 - Le **code postal** n’est pas recommandé : **un même code postal peut correspondre à plusieurs communes** (et inversement).
 Référence INSEE : https://www.insee.fr/fr/information/7766585
