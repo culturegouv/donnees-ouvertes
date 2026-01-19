@@ -19,8 +19,6 @@ Dans Excel, définir le format de cellule :
 Format de cellule → Spécial → Code postal
 Objectif : éviter la perte des zéros initiaux (ex. 06000 transformé en 6000).
 
-Référence INSEE : https://www.insee.fr/fr/information/7766585
-
 ### 3) Si le code postal est utilisé (non recommandé)
 - Dans Excel, définir le format de cellule :
   - **Format de cellule** → **Spécial** → **Code postal**
