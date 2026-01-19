@@ -1,51 +1,47 @@
-# Absence de la vue Explore après l’ajout ou la mise à jour d’une ressource
+# Explore ne s’affiche pas après l’ajout ou la mise à jour d’une ressource
 
 ## Objet
+Cette page décrit les vérifications à effectuer lorsque la vue **Explore** (prévisualisation et exploration) ne s’affiche pas après l’ajout ou la mise à jour d’une **ressource** sur data.gouv.fr.
 
-Cette procédure décrit les vérifications à effectuer lorsqu’une ressource (souvent un fichier CSV) ajoutée ou mise à jour sur data.gouv.fr ne s’affiche pas dans la vue **Explore** (prévisualisation et exploration des données).
+L’affichage dans Explore dépend d’un traitement automatique (analyse / ingestion) opéré par un service de crawl et d’analyse des ressources. Une ressource peut donc être publiée sur data.gouv.fr tout en nécessitant un délai avant d’être exploitable dans Explore.
 
 ## Pré-requis
-
-- disposer de l’**identifiant de la ressource** (`resource_id`, au format UUID)
-- connaître l’URL du **jeu de données** concerné (ou son `dataset_id`)
+- Disposer de l’identifiant de la ressource (`resource_id`, au format UUID).
+- Connaître l’identifiant du jeu de données (`dataset_id`) ou l’URL du jeu de données.
 
 ---
 
-## 1. Vérifier l’affichage dans Explore
+## 1) Vérifier l’affichage dans Explore
 
-Il est possible de tester l’affichage directement dans Explore via une URL de la forme :
+Tester l’affichage via une URL de la forme :
 
 `https://explore.data.gouv.fr/fr/datasets/<dataset_id>/#/resources/<resource_id>`
 
 Exemples :
+- https://explore.data.gouv.fr/fr/datasets/5af120e5b595087cfabcde81/#/resources/3a52af4a-f9da-4dcc-8110-b07774dfb3bc
+- https://explore.data.gouv.fr/fr/datasets/695b8b6f6bf16db672fa28df/#/resources/e4761b32-c601-4ec9-b361-658315d07389
 
-- <https://explore.data.gouv.fr/fr/datasets/5af120e5b595087cfabcde81/#/resources/3a52af4a-f9da-4dcc-8110-b07774dfb3bc>
-- <https://explore.data.gouv.fr/fr/datasets/695b8b6f6bf16db672fa28df/#/resources/e4761b32-c601-4ec9-b361-658315d07389>
-
-### Interprétation
-
-- Si le tableau s’affiche correctement dans Explore : la ressource est bien prise en charge par Explore.
+### Résultat attendu
+- Si le tableau s’affiche : la ressource est bien prise en charge par Explore.
 - Si Explore ne s’affiche pas (ou reste vide) : poursuivre avec l’étape 2.
 
 ---
 
-## 2. Vérifier l’état de traitement de la ressource (crawler)
+## 2) Vérifier l’état d’analyse dans le crawler
 
-L’affichage dans Explore dépend d’un traitement automatique (analyse / ingestion) réalisé par le **crawler**.
+L’affichage dans Explore nécessite que la ressource ait été analysée.
+Il est possible de consulter l’état de traitement via l’API du crawler.
 
-### 2.1 Interroger l’API du crawler
-
-Utiliser l’URL suivante en remplaçant `ID_RESSOURCE` par l’identifiant de la ressource :
+### 2.1 Consulter l’état de la ressource
+Ouvrir l’URL suivante en remplaçant `ID_RESSOURCE` par le `resource_id` :
 
 `https://crawler.data.gouv.fr/api/resources/ID_RESSOURCE`
 
 Exemple :
+- https://crawler.data.gouv.fr/api/resources/e4761b32-c601-4ec9-b361-658315d07389
 
-- <https://crawler.data.gouv.fr/api/resources/e4761b32-c601-4ec9-b361-658315d07389>
-
-### 2.2 Interpréter le statut
-
-Si la réponse contient un statut de ce type :
+### 2.2 Interpréter le champ `status`
+Exemple de réponse (extrait) :
 
 ```json
 {
@@ -56,16 +52,43 @@ Si la réponse contient un statut de ce type :
 }
 ```
 
-attendre la fin du traitement, et tester à nouveay ensuite l’URL Explore (étape 1).
+Si `status` vaut `TO_ANALYSE_RESOURCE`, cela signifie que la ressource est **en attente d’analyse** : il est normal que Explore ne soit pas encore disponible.
 
-Cas B — Analyse qui semble bloquée (statut inchangé durablement)
+---
 
-Si le statut ne semble pas évoluer après un délai raisonnable, contacter le support / l’équipe technique en fournissant :
+## 3) Repères sur les statuts (lecture simplifiée)
 
-- l’URL du jeu de données (data.gouv.fr),
-- le resource_id,
-- l’URL Explore testée,
-- l’URL crawler testée,
+Les statuts exacts peuvent évoluer, mais on rencontre typiquement les étapes suivantes :
+
+- `TO_ANALYSE_RESOURCE` : la ressource est en file d’attente pour analyse.
+- `ANALYSING_RESOURCE` : analyse de la ressource en cours.
+- `TO_ANALYSE_CSV` / `ANALYSING_CSV` : analyse spécifique des contenus tabulaires (CSV).
+- `INSERTING_IN_DB` : ingestion en base (préparation de l’exploration).
+- `CONVERTING_TO_PARQUET` : conversion dans un format de diffusion (selon le cas).
+- `BACKOFF` : ralentissement temporaire (par exemple, limitation côté source).
+
+---
+
+## 4) Actions recommandées
+
+### Cas A — L’analyse est en cours
+- Attendre la fin du traitement (les délais varient selon la taille, le format et la complexité du fichier).
+- Re-tester ensuite l’URL Explore (étape 1).
+
+### Cas B — Le statut n’évolue pas durablement
+Si le statut reste inchangé de manière inhabituelle :
+- Préparer les éléments ci-dessous et contacter l’équipe support/technique.
+
+---
+
+## 5) Informations à transmettre au support/technique
+
+- URL du jeu de données (data.gouv.fr)
+- `dataset_id` (si disponible)
+- `resource_id`
+- URL Explore testée
+- URL crawler testée
+- Réponse JSON complète renvoyée par le crawler
 
 
 
