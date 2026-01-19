@@ -54,7 +54,7 @@ Si la réponse contient un statut de ce type :
   "status": "TO_ANALYSE_RESOURCE",
   "status_since": "2026-01-19T11:37:39.063939+00:00"
 }
-
+```
 
 attendre la fin du traitement, et tester à nouveay ensuite l’URL Explore (étape 1).
 
