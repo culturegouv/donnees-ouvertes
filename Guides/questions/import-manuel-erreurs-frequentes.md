@@ -32,6 +32,7 @@ Le **code postal** n’est pas recommandé : **un même code postal peut corresp
 - Objectif : éviter la perte des **zéros initiaux** (ex. `06000` transformé en `6000`).
 
 ## 3) SIRET (14 caractères)
+Référence : https://annuaire-entreprises.data.gouv.fr/definitions/numero-siret
 - Dans Excel, définir le format de cellule :
   - **Format de cellule** → **Personnalisé**
   - Masque : `00000000000000` (14 zéros)
@@ -39,6 +40,7 @@ Le **code postal** n’est pas recommandé : **un même code postal peut corresp
 
 
 ## 4) SIREN (9 caractères)
+Référence : https://annuaire-entreprises.data.gouv.fr/definitions/numero-siren
 - Dans Excel, définir le format de cellule :
   - **Format de cellule** → **Personnalisé**
   - Masque : `000000000` (9 zéros)
