@@ -14,7 +14,7 @@ Cette fiche recense les erreurs les plus courantes lors de l’import manuel d�
   - **Format de cellule** → **Spécial** → **Code postal**
 - Objectif : éviter la perte des **zéros initiaux** (ex. `06000` transformé en `6000`).
 
-## 4) SIRET (14 chiffres)
+## 4) SIRET (14 caractères)
 - Dans Excel, définir le format de cellule :
   - **Format de cellule** → **Personnalisé**
   - Masque : `00000000000000` (14 zéros)
