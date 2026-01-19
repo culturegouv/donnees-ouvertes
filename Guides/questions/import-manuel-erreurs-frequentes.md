@@ -5,21 +5,22 @@ Cette fiche recense les erreurs les plus courantes lors de l’import manuel d�
 ## 1) Privilégier le format CSV
 - Utiliser **CSV** (format ouvert, non propriétaire).
 
-## 2) Données géographiques : Code commune (COG) : privilégier le code commune INSEE (plutôt que le code postal)
+## 2) Données géographiques
 
+### Code commune INSEE (COM) : privilégier le code commune INSEE (plutôt que le code postal)
 - Pour les référencements territoriaux, s’appuyer sur le **Code officiel géographique (COG)**.
 - Pour identifier une commune, utiliser le **code commune INSEE** (variable `COM`).
 - Le **code postal** n’est pas recommandé : **un même code postal peut correspondre à plusieurs communes** (et inversement).
 Référence INSEE : https://www.insee.fr/fr/information/7766585
 
-### Paramétrer le format sous Excel 
+#### Paramétrer le format sous Excel 
 Dans Excel, définir le format de cellule :
 Format de cellule → Spécial → Code postal
 Objectif : éviter la perte des zéros initiaux (ex. 06000 transformé en 6000).
 
 Référence INSEE : https://www.insee.fr/fr/information/7766585
 
-## 3) Si le code postal est utilisé (non recommandé)
+### 3) Si le code postal est utilisé (non recommandé)
 - Dans Excel, définir le format de cellule :
   - **Format de cellule** → **Spécial** → **Code postal**
 - Objectif : éviter la perte des **zéros initiaux** (ex. `06000` transformé en `6000`).
