@@ -5,15 +5,15 @@
 
 ### Description du problème
 Un message d'erreur s'affiche lorsque vous essayez de prévisualiser un fichier dataset :
-
 "L'aperçu de ce fichier n'a pas pu être chargé."
 
 Cette erreur est liée à un dysfonctionnement de l'API Tabular, qui retourne le message suivant :
-
 "La ressource a été supprimée."
 
 ### Note importante : Ce message est erroné. La ressource n'a pas été supprimée et reste disponible.
 
+### Vérification / reproduction
+https://tabular-api.data.gouv.fr/api/resources/403c9108-dd0a-443d-9ed5-bca5f056fa8f/
 ### Statut actuel
 Problème identifié : L'erreur provient d'une incohérence entre l'API et le système de gestion des ressources.
 ### Actions en cours :
