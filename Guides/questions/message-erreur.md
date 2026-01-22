@@ -10,7 +10,8 @@ Un message d'erreur s'affiche lorsque vous essayez de prévisualiser un fichier 
 Cette erreur est liée à un dysfonctionnement de l'API Tabular, qui retourne le message suivant :
 "La ressource a été supprimée."
 
-### Note importante : Ce message est erroné. La ressource n'a pas été supprimée et reste disponible.
+### Note importante 
+Ce message est erroné. La ressource n'a pas été supprimée et reste disponible.
 
 ### Vérification / reproduction
 https://tabular-api.data.gouv.fr/api/resources/[ID RESSOURCE]
