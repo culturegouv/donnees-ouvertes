@@ -58,6 +58,13 @@ Contacts, ressources, formations et aide du **Département des politiques numér
 - [API tabulaire data.gouv.fr (beta)](https://www.data.gouv.fr/dataservices/api-tabulaire-data-gouv-fr-beta/)  
 ---
 
+### 🗂️ Production des données
+
+Les fichiers du répertoire `data` sont générés automatiquement à partir de scripts
+et de workflows GitHub Actions.
+
+La documentation détaillée est disponible dans `data/docs-scripts-production-donnees.md`.
+
 ### 💬 Contacts et entraide  
 
 #### 📢 Échanger avec la communauté  
