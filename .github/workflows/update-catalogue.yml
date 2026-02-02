@@ -1,48 +1,55 @@
-name: Update catalogue culture global
+name: Update catalogue MC
 
 on:
   workflow_dispatch:
   schedule:
-    # Tous les jours à 05:15 UTC (02:15 Europe/Paris en hiver)
-    - cron: "15 5 * * *"
+    - cron: "15 6 * * *"  # tous les jours à 06:15 UTC
 
 permissions:
   contents: write
 
 jobs:
-  build-and-commit:
+  update:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Install deps
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          # requirements.txt à la racine :
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          # sinon, fallback minimal  :
+          pip install pandas requests
 
       - name: Build catalogue
         run: |
-          python scripts/build_catalogue.py
+          mkdir -p data
+          python script/catalogue_MC.py
 
-      - name: Commit & push if changed
+      - name: Commit & push if file changed
         run: |
+          set -euo pipefail
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Affiche les changements éventuels
-          git status --porcelain
+          # On stage uniquement le fichier attendu
+          git add data/catalogue_culture_global.csv
 
-          if [ -n "$(git status --porcelain)" ]; then
-            git add data/catalogue_culture_global.csv
-            git commit -m "chore(data): update catalogue_culture_global.csv"
-            git push
-          else
+          # Si rien n'est staged, on sort
+          if git diff --cached --quiet; then
             echo "No changes to commit."
+            exit 0
           fi
+
+          git commit -m "chore(data): update catalogue_culture_global.csv"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
