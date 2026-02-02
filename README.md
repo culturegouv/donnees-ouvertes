@@ -63,7 +63,7 @@ Contacts, ressources, formations et aide du **Département des politiques numér
 Les fichiers du répertoire `data` sont générés automatiquement à partir de scripts
 et de workflows GitHub Actions.
 
-La documentation détaillée est disponible dans `data/docs-scripts-production-donnees.md`.
+La documentation détaillée est disponible dans [data/docs-scripts-production-donnees.md](https://github.com/culturegouv/donnees-ouvertes/blob/main/data/docs-scripts-production-donnees.md)
 
 ### 💬 Contacts et entraide  
 
