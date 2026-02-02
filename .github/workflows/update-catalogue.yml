@@ -21,29 +21,34 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: "pip"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # requirements.txt à la racine :
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          # sinon, fallback minimal  :
-          pip install pandas requests
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            pip install pandas requests
+          fi
 
       - name: Build catalogue
         run: |
           mkdir -p data
           python script/catalogue_MC.py
 
-      - name: Commit & push if file changed
+      - name: Commit & push if files changed
         run: |
           set -euo pipefail
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # On stage uniquement le fichier attendu
-          git add data/catalogue_culture_global.csv
+          # On stage uniquement les fichiers attendus
+          git add \
+            data/catalogue_culture_global.csv \
+            data/catalogue_culture_global_log.txt \
+            data/catalogue_culture_global_stats.csv
 
           # Si rien n'est staged, on sort
           if git diff --cached --quiet; then
@@ -51,5 +56,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "chore(data): update catalogue_culture_global.csv"
+          git commit -m "chore(data): update catalogue + logs"
           git push origin "HEAD:${GITHUB_REF_NAME}"
