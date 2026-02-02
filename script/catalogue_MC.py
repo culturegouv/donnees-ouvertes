@@ -8,7 +8,9 @@ from io import StringIO
 import pandas as pd
 import requests
 
-
+# -------------------------------------------------------------
+# Liste des organisations à importer
+# -------------------------------------------------------------
 ORG_IDS = [
     "534fff91a3a7292c64a77f73",
     "534fff5ea3a7292c64a77d40",
@@ -27,8 +29,14 @@ ORG_IDS = [
     "57fe0dfac751df15a779df72",
 ]
 
+OUT_PATH = "data/catalogue_culture_global.csv"
 
+
+# -------------------------------------------------------------
+# Helpers
+# -------------------------------------------------------------
 def org_has_at_least_one_dataset(session: requests.Session, oid: str) -> bool:
+    """Teste si l'organisation a au moins 1 dataset via l'API JSON (pas de pagination nécessaire)."""
     url = f"https://www.data.gouv.fr/api/1/organizations/{oid}/datasets/?page_size=1"
     r = session.get(url, timeout=30)
     r.raise_for_status()
@@ -37,28 +45,44 @@ def org_has_at_least_one_dataset(session: requests.Session, oid: str) -> bool:
 
 
 def download_org_csv(session: requests.Session, oid: str) -> pd.DataFrame:
+    """Télécharge le CSV datasets.csv pour une organisation et le charge en DataFrame."""
     url = f"https://www.data.gouv.fr/api/1/organizations/{oid}/datasets.csv"
     print(f"📥 Téléchargement : {url}")
 
     r = session.get(url, timeout=60)
     r.raise_for_status()
 
+    # CSV data.gouv : généralement séparateur ';' + quotechar '"'
     df = pd.read_csv(
         StringIO(r.text),
         sep=";",
         quotechar='"',
         engine="python",
-        on_bad_lines="warn",
+        on_bad_lines="warn",  # tolérant en cas de ligne tordue
     )
     df["organization_id"] = oid
     return df
 
 
+def sanitize_for_github_csv(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Évite l'erreur GitHub 'Illegal quoting' en supprimant les retours à la ligne
+    à l'intérieur des champs texte (description, etc.).
+    """
+    obj_cols = df.select_dtypes(include=["object"]).columns
+    for c in obj_cols:
+        # Remplace CR/LF internes par un espace
+        df[c] = df[c].astype(str).str.replace(r"[\r\n]+", " ", regex=True)
+    return df
+
+
+# -------------------------------------------------------------
+# Main
+# -------------------------------------------------------------
 def main() -> int:
     session = requests.Session()
-    frames = []
 
-    # ✅ compteur par organisation pour le rapport
+    frames = []
     counts_by_org = {}
     skipped = 0
     failed = 0
@@ -72,8 +96,6 @@ def main() -> int:
                 continue
 
             df = download_org_csv(session, oid)
-
-            # ✅ log : nb de datasets dans le CSV de l'organisation
             n = len(df)
             counts_by_org[oid] = n
             print(f"✅ {oid} : {n} dataset(s)")
@@ -91,23 +113,30 @@ def main() -> int:
 
     final_df = pd.concat(frames, ignore_index=True)
 
-    os.makedirs("data", exist_ok=True)
-    out_path = "data/catalogue_culture_global.csv"
+    # (Optionnel) tri pour stabiliser les diffs git
+    if "id" in final_df.columns:
+        final_df = final_df.sort_values(by=["organization_id", "id"], kind="mergesort")
 
+    # ✅ Correction GitHub: enlever retours à la ligne internes
+    final_df = sanitize_for_github_csv(final_df)
+
+    os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
+
+    # ✅ Export stable pour GitHub (quoting + lineterminator)
     final_df.to_csv(
-        out_path,
+        OUT_PATH,
         sep=";",
         index=False,
         encoding="utf-8",
         quotechar='"',
-        quoting=csv.QUOTE_MINIMAL,
+        quoting=csv.QUOTE_ALL,
+        lineterminator="\n",
     )
 
-    print("\n🎉 Export final généré :", out_path)
+    print("\n🎉 Export final généré :", OUT_PATH)
     print("📊 Total lignes :", len(final_df))
     print(f"ℹ️ Orgs ignorées (0 dataset): {skipped} | échecs: {failed}")
 
-    # ✅ Récap final : nb de datasets par organisation
     print("\n📌 Datasets par organisation :")
     for oid in ORG_IDS:
         c = counts_by_org.get(oid)
