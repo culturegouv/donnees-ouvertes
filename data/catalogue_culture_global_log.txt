@@ -1,0 +1,53 @@
+🕒 Run UTC : 2026-02-02T11:45:50Z
+📌 Nombre d'organisations: 15
+
+📥 Téléchargement : https://www.data.gouv.fr/api/1/organizations/534fff91a3a7292c64a77f73/datasets.csv
+✅ 534fff91a3a7292c64a77f73 (Ministère de la Culture) : 181 dataset(s)
+📥 Téléchargement : https://www.data.gouv.fr/api/1/organizations/534fff5ea3a7292c64a77d40/datasets.csv
+✅ 534fff5ea3a7292c64a77d40 (Centre des monuments nationaux) : 4 dataset(s)
+📥 Téléchargement : https://www.data.gouv.fr/api/1/organizations/534fff5fa3a7292c64a77d49/datasets.csv
+✅ 534fff5fa3a7292c64a77d49 (Centre national du cinéma et de l'image animée) : 34 dataset(s)
+⏭️  534fff5fa3a7292c64a77d44 (Centre national d'art et de culture Georges Pompidou) : 0 dataset → ignoré
+⏭️  534fff60a3a7292c64a77d55 (Cité de la musique) : 0 dataset → ignoré
+📥 Téléchargement : https://www.data.gouv.fr/api/1/organizations/534fff71a3a7292c64a77dcd/datasets.csv
+✅ 534fff71a3a7292c64a77dcd (École nationale supérieure d'art Villa Arson de Nice) : 7 dataset(s)
+📥 Téléchargement : https://www.data.gouv.fr/api/1/organizations/534fff72a3a7292c64a77dd0/datasets.csv
+✅ 534fff72a3a7292c64a77dd0 (École nationale supérieure des métiers de l'image et du son (La Fémis)) : 3 dataset(s)
+⏭️  534fff73a3a7292c64a77dda (Établissement public de la Réunion des musées nationaux et du Grand Palais des Champs-Élysées) : 0 dataset → ignoré
+⏭️  534fff74a3a7292c64a77ddd (Établissement public du château, du musée et du domaine national de Versailles) : 0 dataset → ignoré
+📥 Téléchargement : https://www.data.gouv.fr/api/1/organizations/534fff74a3a7292c64a77de0/datasets.csv
+✅ 534fff74a3a7292c64a77de0 (Établissement public du musée d'Orsay et du musée de l'Orangerie) : 2 dataset(s)
+📥 Téléchargement : https://www.data.gouv.fr/api/1/organizations/534fff82a3a7292c64a77e82/datasets.csv
+✅ 534fff82a3a7292c64a77e82 (Institut national de recherches archéologiques préventives) : 3 dataset(s)
+📥 Téléchargement : https://www.data.gouv.fr/api/1/organizations/534fff97a3a7292c64a7800b/datasets.csv
+✅ 534fff97a3a7292c64a7800b (Musée des arts asiatiques Guimet) : 3 dataset(s)
+⏭️  534fff98a3a7292c64a7800e (Musée du Louvre) : 0 dataset → ignoré
+⏭️  534fffb2a3a7292c64a78125 (Théâtre national de l'Odéon, Théâtre de l'Europe) : 0 dataset → ignoré
+📥 Téléchargement : https://www.data.gouv.fr/api/1/organizations/57fe0dfac751df15a779df72/datasets.csv
+✅ 57fe0dfac751df15a779df72 (Institut national de l'audiovisuel) : 7 dataset(s)
+
+🎉 Export final généré : data/catalogue_culture_global.csv
+📊 Total lignes : 244
+ℹ️ Orgs ignorées (0 dataset): 6 | échecs: 0
+
+📌 Datasets par organisation :
+ - 534fff91a3a7292c64a77f73 (Ministère de la Culture) : 181
+ - 534fff5ea3a7292c64a77d40 (Centre des monuments nationaux) : 4
+ - 534fff5fa3a7292c64a77d49 (Centre national du cinéma et de l'image animée) : 34
+ - 534fff5fa3a7292c64a77d44 (Centre national d'art et de culture Georges Pompidou) : 0
+ - 534fff60a3a7292c64a77d55 (Cité de la musique) : 0
+ - 534fff71a3a7292c64a77dcd (École nationale supérieure d'art Villa Arson de Nice) : 7
+ - 534fff72a3a7292c64a77dd0 (École nationale supérieure des métiers de l'image et du son (La Fémis)) : 3
+ - 534fff73a3a7292c64a77dda (Établissement public de la Réunion des musées nationaux et du Grand Palais des Champs-Élysées) : 0
+ - 534fff74a3a7292c64a77ddd (Établissement public du château, du musée et du domaine national de Versailles) : 0
+ - 534fff74a3a7292c64a77de0 (Établissement public du musée d'Orsay et du musée de l'Orangerie) : 2
+ - 534fff82a3a7292c64a77e82 (Institut national de recherches archéologiques préventives) : 3
+ - 534fff97a3a7292c64a7800b (Musée des arts asiatiques Guimet) : 3
+ - 534fff98a3a7292c64a7800e (Musée du Louvre) : 0
+ - 534fffb2a3a7292c64a78125 (Théâtre national de l'Odéon, Théâtre de l'Europe) : 0
+ - 57fe0dfac751df15a779df72 (Institut national de l'audiovisuel) : 7
+
+📄 Fichiers générés :
+ - data/catalogue_culture_global.csv
+ - data/catalogue_culture_global_log.txt
+ - data/catalogue_culture_global_stats.csv
