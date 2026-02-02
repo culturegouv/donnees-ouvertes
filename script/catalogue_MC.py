@@ -210,7 +210,6 @@ def main() -> int:
                 "organization_id": oid,
                 "organization_name": org_name_by_id.get(oid, ""),
                 "datasets_count": "" if c is None else c,
-                "status": "error" if c is None else ("empty" if c == 0 else "ok"),
             }
         )
     pd.DataFrame(stats_rows).to_csv(LOG_STATS_PATH, index=False, encoding="utf-8")
