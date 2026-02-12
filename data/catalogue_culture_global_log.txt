@@ -1,8 +1,8 @@
-🕒 Run UTC : 2026-02-11T03:54:15Z
+🕒 Run UTC : 2026-02-12T03:49:15Z
 📌 Nombre d'organisations: 15
 
 📥 Téléchargement : https://www.data.gouv.fr/api/1/organizations/534fff91a3a7292c64a77f73/datasets.csv
-✅ 534fff91a3a7292c64a77f73 (Ministère de la Culture) : 181 dataset(s)
+✅ 534fff91a3a7292c64a77f73 (Ministère de la Culture) : 182 dataset(s)
 📥 Téléchargement : https://www.data.gouv.fr/api/1/organizations/534fff5ea3a7292c64a77d40/datasets.csv
 ✅ 534fff5ea3a7292c64a77d40 (Centre des monuments nationaux) : 4 dataset(s)
 📥 Téléchargement : https://www.data.gouv.fr/api/1/organizations/534fff5fa3a7292c64a77d49/datasets.csv
@@ -27,11 +27,11 @@
 ✅ 57fe0dfac751df15a779df72 (Institut national de l'audiovisuel) : 7 dataset(s)
 
 🎉 Export final généré : data/catalogue_culture_global.csv
-📊 Total lignes : 244
+📊 Total lignes : 245
 ℹ️ Orgs ignorées (0 dataset): 6 | échecs: 0
 
 📌 Datasets par organisation :
- - 534fff91a3a7292c64a77f73 (Ministère de la Culture) : 181
+ - 534fff91a3a7292c64a77f73 (Ministère de la Culture) : 182
  - 534fff5ea3a7292c64a77d40 (Centre des monuments nationaux) : 4
  - 534fff5fa3a7292c64a77d49 (Centre national du cinéma et de l'image animée) : 34
  - 534fff5fa3a7292c64a77d44 (Centre national d'art et de culture Georges Pompidou) : 0
