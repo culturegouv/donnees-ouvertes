@@ -63,6 +63,21 @@ Contacts, ressources, formations et aide du **Département des politiques numér
 Les fichiers du répertoire `data` sont générés automatiquement à partir de scripts
 et de workflows GitHub Actions.
 
+La documentation détaillée est disponible dans [data/docs-scripts-production-donnees.md](https://github.com/culturegouv/donnees-ouvertes/blob/main/data/docs-scripts-production-donnees.md).
+
+### Fréquentation
+
+#### Information : 
+- verticale des données de la culture : culture.data.gouv.fr : https://stats.data.gouv.fr/index.php?module=CoreHome&action=index&idSite=312&period=range&date=previous30#?period=range&date=2025-09-30,2026-02-12&category=Dashboard_Dashboard&subcategory=1&idSite=312
+- page organisation du ministère de la Culture : https://www.data.gouv.fr/organizations/ministere-de-la-culture-et-de-la-communication/information
+
+##### Grille d'analyse - plateforme des données ouvertes de la Culture (culture.data.gouv.fr): 
+- publication de la plateforme 30 août 2025
+- lancement de la campagne auprès des gestionnaire : 17 septembre 2025
+- lancement de la campagne communication grand public : mars 2026. 
+
+
+
 La documentation détaillée est disponible dans [data/docs-scripts-production-donnees.md](https://github.com/culturegouv/donnees-ouvertes/blob/main/data/docs-scripts-production-donnees.md)
 
 ### 💬 Contacts et entraide  
