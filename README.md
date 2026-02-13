@@ -73,8 +73,8 @@ La documentation détaillée est disponible dans [data/docs-scripts-production-d
 
 ##### Grille d'analyse - plateforme des données ouvertes de la Culture (culture.data.gouv.fr): 
 - publication de la plateforme 30 août 2025
-- lancement de la campagne auprès des gestionnaire : 17 septembre 2025
-- lancement de la campagne communication grand public : mars 2026. 
+- lancement de la campagne auprès des gestionnaires des jeux de données : 17 septembre 2025
+- lancement de la campagne de communication grand public : mars 2026. 
 
 
 
