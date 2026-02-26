@@ -18,35 +18,23 @@ note: les opérateurs et établissements publics rattachés au ministère peuven
 - écrire en minuscules, sans accents, au format `kebab-case` (mots séparés par des tirets), par exemple `spectacle-vivant`
 - choisir des tags thématiques (de quoi parle la donnée) plutôt que des tags techniques (csv, api, etc.)
 
-## Liste des tags recommandés
-
-### Jeux du ministère de la Culture
-- `ministeredelaculture`
-
-### thématiques transversales
+## Liste des tags recommandés (ordre alphabétique)
+- `architecture`
+- `archives`
+- `arts-plastiques`
+- `cinema`
 - `financement`
 - `ia`
-
-### DGMIC
 - `industries-culturelles`
-- `livre`
 - `langue`
-- `presse`
-
-### DGCA
-- `arts-plastiques`
-- `spectacle-vivant`
-
-### DGPA
-- `architecture`
-- `patrimoine`
+- `livre`
+- `ministeredelaculture`
 - `monuments-historiques`
-- `sites-patrimoniaux`
 - `musee`
-- `archives`
-
-### Autres thématiques (selon le périmètre du jeu de données)
-- `cinema`
+- `patrimoine`
+- `presse`
+- `sites-patrimoniaux`
+- `spectacle-vivant`
 
 ## Exemples
 - un jeu produit par une DRAC sur des monuments historiques: `culture`, `ministeredelaculture`, `monuments-historiques`, `patrimoine`
@@ -54,6 +42,8 @@ note: les opérateurs et établissements publics rattachés au ministère peuven
 - un jeu sur la programmation de spectacle vivant: `culture`, `spectacle-vivant` (et `ministeredelaculture` si producteur ministère/DRAC/opérateur rattaché)
 
 ## Proposer un nouveau tag
+Un nouveau tag est ajouté lorsqu’il correspond à plusieurs jeux de données ou à une politique publique structurante, afin d’éviter la multiplication de tags synonymes
+
 Si un besoin récurrent n’est pas couvert par la liste:
 - proposer un tag au format `kebab-case` (sans accents)
 - décrire en une phrase son périmètre (ce qu’il couvre / ne couvre pas)
