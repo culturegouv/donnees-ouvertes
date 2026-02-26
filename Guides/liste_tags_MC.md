@@ -1,12 +1,15 @@
 # Principaux tags utilisés par le ministère de la Culture pour la transversale des données de la Culture
 
-Ce document présente les tags recommandés pour décrire les jeux de données publiés dans la transversale « culture ». L’objectif: améliorer la découvrabilité (recherche, filtres), faciliter la réutilisation et garantir une indexation cohérente.
+Ce document présente les tags recommandés pour décrire les jeux de données publiés dans la transversale des données de la Culture "culture.data.gouv.fr" et data.gouv.fr. 
+
+L’objectif: améliorer la découvrabilité (recherche, filtres), faciliter la réutilisation et garantir une indexation cohérente.
+Cette liste n’est ni limitative ni exhaustive: elle peut évoluer et être complétée en fonction des besoins des producteurs et des usages.
 
 ## Règles de taggage
 
 ### Tags obligatoires
-- `culture`: à ajouter sur tous les jeux de données référencés dans la transversale culture. :contentReference[oaicite:2]{index=2}
-- `ministeredelaculture`: à ajouter si le jeu de données est produit par le ministère de la Culture (administration centrale) ou par ses services déconcentrés (DRAC). :contentReference[oaicite:3]{index=3}
+- `culture`: à ajouter sur tous les jeux de données référencés dans la transversale culture. 
+- `ministeredelaculture`: à ajouter si le jeu de données est produit par le ministère de la Culture (administration centrale) ou par ses services déconcentrés (DRAC).
 
 ### Bonnes pratiques
 - privilégier les tags existants de cette liste: avant de créer un nouveau tag, vérifier qu’un tag proche n’existe pas déjà
@@ -21,17 +24,17 @@ Ce document présente les tags recommandés pour décrire les jeux de données p
 
 ### Thématiques transversales
 - `financement`
-- `ia` :contentReference[oaicite:5]{index=5}
+- `ia`
 
 ### DGMIC
 - `industries-culturelles`
 - `livre`
 - `langue`
-- `presse` :contentReference[oaicite:6]{index=6}
+- `presse`
 
 ### DGCA
 - `arts-plastiques`
-- `spectacle-vivant` :contentReference[oaicite:7]{index=7}
+- `spectacle-vivant`
 
 ### DGPA
 - `architecture`
@@ -39,7 +42,7 @@ Ce document présente les tags recommandés pour décrire les jeux de données p
 - `monuments-historiques`
 - `sites-patrimoniaux`
 - `musee`
-- `archives` :contentReference[oaicite:8]{index=8}
+- `archives`
 
 ### Autres thématiques (selon le périmètre du jeu de données)
 - `cinema`
