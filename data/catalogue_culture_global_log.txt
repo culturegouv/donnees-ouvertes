@@ -1,5 +1,5 @@
-🕒 Run UTC : 2026-02-27T03:35:55Z
-📌 Nombre d'organisations: 15
+🕒 Run UTC : 2026-02-28T03:18:20Z
+📌 Nombre d'organisations: 16
 
 📥 Téléchargement : https://www.data.gouv.fr/api/1/organizations/534fff91a3a7292c64a77f73/datasets.csv
 ✅ 534fff91a3a7292c64a77f73 (Ministère de la Culture) : 182 dataset(s)
@@ -25,9 +25,11 @@
 ⏭️  534fffb2a3a7292c64a78125 (Théâtre national de l'Odéon, Théâtre de l'Europe) : 0 dataset → ignoré
 📥 Téléchargement : https://www.data.gouv.fr/api/1/organizations/57fe0dfac751df15a779df72/datasets.csv
 ✅ 57fe0dfac751df15a779df72 (Institut national de l'audiovisuel) : 7 dataset(s)
+📥 Téléchargement : https://www.data.gouv.fr/api/1/organizations/534fff5aa3a7292c64a77d09/datasets.csv
+✅ 534fff5aa3a7292c64a77d09 (Bibliothèque nationale de France) : 14 dataset(s)
 
 🎉 Export final généré : data/catalogue_culture_global.csv
-📊 Total lignes : 245
+📊 Total lignes : 259
 ℹ️ Orgs ignorées (0 dataset): 6 | échecs: 0
 
 📌 Datasets par organisation :
@@ -46,6 +48,7 @@
  - 534fff98a3a7292c64a7800e (Musée du Louvre) : 0
  - 534fffb2a3a7292c64a78125 (Théâtre national de l'Odéon, Théâtre de l'Europe) : 0
  - 57fe0dfac751df15a779df72 (Institut national de l'audiovisuel) : 7
+ - 534fff5aa3a7292c64a77d09 (Bibliothèque nationale de France) : 14
 
 📄 Fichiers générés :
  - data/catalogue_culture_global.csv
