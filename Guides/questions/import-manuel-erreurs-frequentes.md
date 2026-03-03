@@ -68,4 +68,4 @@ Référence : https://annuaire-entreprises.data.gouv.fr/definitions/numero-siren
 - Dans Excel, définir le format de cellule :
   - **Format de cellule** → **Personnalisé**
   - Masque : `000000000` (9 zéros)
-- Objectif : conserver les ** chiffres** et les **zéros initiaux**.
+- Objectif : conserver les ** 9 chiffres** et les **zéros initiaux**.
