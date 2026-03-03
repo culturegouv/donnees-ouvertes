@@ -2,6 +2,15 @@
 
 Cette fiche recense les erreurs les plus courantes lors de l’import manuel d’une ressource (fichier) sur data.gouv.fr, et les bonnes pratiques associées.
 
+
+## Préconisations et points de vigilance
+
+- Utiliser le format **CSV**
+- Éviter les **espaces et caractères spéciaux dans les noms de champs**
+- Limiter les noms de champs à **63 caractères**
+- Utiliser le **code commune INSEE** plutôt que le code postal
+- Formater correctement **SIREN (9)** et **SIRET (14)** dans Excel
+
 ## 1) Normalisation générale
 
 ### Privilégier le format CSV
