@@ -10,6 +10,9 @@ Cette fiche recense les erreurs les plus courantes lors de l’import manuel d�
 - Utiliser le **code commune INSEE** plutôt que le code postal
 - Formater correctement **SIREN (9)** et **SIRET (14)** dans Excel
 - Ne pas mélanger dans une même colonne SIREN et SIRET
+- Ne pas utiliser **plusieurs feuilles** dans un même fichier
+- Ne pas **fusionner les cellules ou les colonnes**
+- Rappel : les **couleurs et mises en forme Excel ne sont pas prises en compte**
 
 ## 1) Normalisation générale
 
