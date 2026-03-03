@@ -42,7 +42,7 @@ Dont :
 
 ### 2.1) Code commune INSEE : privilégier le code commune INSEE (plutôt que le code postal)
 
-- Pour identifier une commune, utiliser le **code commune du code officiel géographique publié par l'INSEE via code_commune**.
+- Utiliser le **code commune du Code officiel géographique (COG) publié par l’INSEE**, via `code_commune`
 - Le **code postal** n’est pas recommandé : **un même code postal peut correspondre à plusieurs communes**.
 
 #### Paramétrer le format sous Excel 
