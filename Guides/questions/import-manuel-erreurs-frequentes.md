@@ -38,7 +38,7 @@ Dont :
 - code_region
 - code_arrondissement
 - code_pays
-- Codes communes des collectivités et territoires français d'outre-mer
+- codes_communes_outre_mer
 
 ### 2.1) Code commune INSEE : privilégier le code commune INSEE (plutôt que le code postal)
 
