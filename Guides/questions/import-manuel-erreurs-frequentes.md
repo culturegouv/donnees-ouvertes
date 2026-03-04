@@ -179,9 +179,8 @@ Référence :
 https://annuaire-entreprises.data.gouv.fr/definitions/numero-siret
 
 Paramétrage Excel :
-
-```
 Format de cellule → Personnalisé
+```
 00000000000000
 ```
 
@@ -195,9 +194,8 @@ Référence :
 https://annuaire-entreprises.data.gouv.fr/definitions/numero-siren
 
 Paramétrage Excel :
-
-```
 Format de cellule → Personnalisé
+```
 000000000
 ```
 
