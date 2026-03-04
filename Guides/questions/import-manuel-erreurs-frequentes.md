@@ -1,192 +1,157 @@
 # Guide de bonnes pratiques pour formater une ressource avant son import sur data.gouv.fr
 
-Cette fiche présente les bonnes pratiques à respecter lors du formatage et de l'import manuel d'une ressource (fichier) sur data.gouv.fr.\
-Elle vise à faciliter l'exploitation des données sur la plateforme, notamment la génération des **prévisualisations** et des **datavisualisations automatiques**.
+Cette fiche présente les bonnes pratiques à respecter lors du formatage et de l'import manuel d'une ressource (fichier) sur data.gouv.fr. Elle vise à faciliter l'exploitation des données sur la plateforme, notamment la génération des **prévisualisations** et des **datavisualisations automatiques**.
 
-------------------------------------------------------------------------
+---
 
 ## Sommaire
 
-- [Bonnes pratiques de formatage](#bonnes-pratiques-de-formatage)
-- [Vérifications avant et après l'import](#vérifications-avant-et-après-limport)
-- [Erreurs fréquemment rencontrées](#erreurs-fréquemment-rencontrées)
-- [Normalisation générale](#normalisation-générale)
-- [Données géographiques](#données-géographiques)
-- [SIRET](#siret-14-caractères)
-- [SIREN](#siren-9-caractères)
-- [Valeurs nulles et zéros](#valeurs-nulles-et-zéros)
+- [Bonnes pratiques de formatage](#1-bonnes-pratiques-de-formatage)
+- [Vérifications avant et après l'import](#2-vérifications-avant-et-après-limport)
+- [Erreurs fréquemment rencontrées](#3-erreurs-fréquemment-rencontrées)
+- [Normalisation générale](#4-normalisation-générale)
+- [Données géographiques](#5-données-géographiques)
+- [SIRET](#6-siret)
+- [SIREN](#7-siren)
+- [Valeurs nulles et zéros](#8-valeurs-nulles-et-zéros)
 
-------------------------------------------------------------------------
+---
 
-# Bonnes pratiques de formatage
+## 1. Bonnes pratiques de formatage
 
 ### Principes généraux
 
--   Utiliser le format **CSV**
--   Utiliser des **noms de champs simples**, sans espaces ni caractères
-    spéciaux (sauf `_` ou `-`).
--   Limiter les noms de champs à **63 caractères**
--   Utiliser le **code commune INSEE** pour les référencements
-    territoriaux
--   Utiliser des colonnes distinctes pour les **identifiants
-    d'entreprises** (`SIREN`, `SIRET`)
--   Utiliser **une seule feuille par fichier**
--   Utiliser une **structure tabulaire simple**, sans cellules
-    fusionnées
--   Se rappeler que les **couleurs et mises en forme Excel ne sont pas
-    prises en compte**
--   Privilégier l'**alignement avec des référentiels et vocabulaires**
--   Structurer les données selon le principe : **une colonne = une
-    information**
+- Utiliser le format **CSV**
+- Utiliser des **noms de champs simples**, sans espaces ni caractères spéciaux (sauf `_` ou `-`)
+- Limiter les noms de champs à **63 caractères**
+- Utiliser le **code commune INSEE** pour les référencements territoriaux
+- Utiliser des colonnes distinctes pour les **identifiants d'entreprises** (`SIREN`, `SIRET`)
+- Utiliser **une seule feuille par fichier**
+- Utiliser une **structure tabulaire simple**, sans cellules fusionnées
+- Les **couleurs et mises en forme Excel ne sont pas prises en compte**
+- Privilégier l'**alignement avec des référentiels et vocabulaires**
+- Principe : **une colonne = une information**
 
-# Vérifications avant et après l'import
+---
 
-Certaines transformations automatiques peuvent être appliquées par les tableurs (Excel, LibreOffice, etc.) lors de la préparation ou de l'export d'un fichier.\
-Il est recommandé de vérifier certains champs **avant l'export au format CSV** et **après l'import sur data.gouv.fr**.
+## 2. Vérifications avant et après l'import
 
-------------------------------------------------------------------------
+Certaines transformations automatiques peuvent être appliquées par les tableurs (Excel, LibreOffice, etc.) lors de la préparation ou de l'export d'un fichier.
 
-## Vérifications avant l'import
+### 2.1 Vérifications avant l'import
 
-Avant d'exporter le fichier en CSV, vérifier en priorité :
-
-**Codes géographiques**
-
+#### Codes géographiques
 Vérifier que les **zéros initiaux sont conservés**.
 
-Exemple :
+```
+06088 → 6088
+```
 
-    06088 → 6088
-
-**Identifiants d'entreprises**
-
+#### Identifiants d’entreprises
 Vérifier que les **SIREN et SIRET ne sont pas affichés en notation scientifique**.
 
-Exemple :
+```
+55210055400013 → 5,52101E+13
+```
 
-    55210055400013 → 5,52101E+13
+#### Pourcentages
+Vérifier qu’aucune conversion automatique n’a été appliquée.
 
-**Pourcentages**
+```
+2 % → 0,02
+```
 
-Vérifier qu'aucune conversion automatique n'a été appliquée.
+#### Dates
+Vérifier que certaines valeurs n’ont pas été **interprétées automatiquement comme des dates**.
 
-Exemple :
+---
 
-    2 % → 0,02
+### 2.2 Vérifications après l'import
 
-**Dates**
+Une **prévisualisation du fichier** est généralement disponible **environ 15 minutes après l'import**.
 
-Vérifier que certaines valeurs n'ont pas été **interprétées automatiquement comme des dates**.
+Vérifier :
+- la **prévisualisation du fichier**
+- la bonne **lecture des colonnes**
+- l'absence de **valeurs transformées**
+- la bonne **interprétation des données géographiques**
 
-------------------------------------------------------------------------
+#### Vérifications techniques (avancé)
 
-## Vérifications après l'import
+Dans **Métadonnées → Extras**, vérifier qu'aucune variable `error` n'est présente.
 
-Après l'import de la ressource sur data.gouv.fr, il est recommandé de vérifier que les données ont été correctement interprétées par la
-plateforme.
+Il est également possible de vérifier le traitement de la ressource via :
 
-Une **prévisualisation du fichier** est généralement générée **environ 15 minutes après l'import**.
+```
+/api/1/datasets/<dataset_id>/resources/<resource_id>/crawl
+```
 
-Vérifier notamment :
+---
 
--   la **prévisualisation du fichier**
--   la bonne **lecture des colonnes**
--   l'absence de **valeurs tronquées ou transformées**
--   la bonne **interprétation des données géographiques** si une carte
-    est générée
-
-### Vérifications techniques (avancé)
-
-Il est également possible de vérifier l'absence d'erreur dans les **métadonnées de la ressource** :
-
--   ouvrir l'onglet **Métadonnées**
--   consulter la section **Extras**
--   vérifier qu'aucune variable **`error`** n'est présente
-
-Il est également possible de vérifier si le traitement de la ressource a été réalisé via la requête :
-
-    /api/1/datasets/<dataset_id>/resources/<resource_id>/crawl
-
-------------------------------------------------------------------------
-
-# Erreurs fréquemment rencontrées
+## 3. Erreurs fréquemment rencontrées
 
 ### Top 3 des erreurs
 
-**1 --- Suppression du zéro initial**
+#### 1. Suppression du zéro initial
 
-Exemple :
+```
+06088 → 6088
+```
 
-    06088 → 6088
+Solution : utiliser le format **Code postal** dans Excel.
 
-Solution : définir le format de cellule **Code postal** avant l'export CSV.
+---
 
-------------------------------------------------------------------------
+#### 2. SIRET affiché en notation scientifique
 
-**2 --- SIRET affiché en notation scientifique**
+```
+55210055400013 → 5,52101E+13
+```
 
-Exemple :
+Solution : définir un format personnalisé :
 
-    55210055400013 → 5,52101E+13
+```
+00000000000000
+```
 
-Solution : définir un format de cellule **Personnalisé** :
+---
 
-    00000000000000
+#### 3. Nom de champ supérieur à 63 caractères
 
-------------------------------------------------------------------------
-
-**3 --- Nom de champ supérieur à 63 caractères**
-
-Conséquence :\
-Le fichier peut ne pas être analysé correctement et certaines **datavisualisations ne seront pas disponibles**.
+Conséquence : certaines **datavisualisations ne seront pas générées**.
 
 Solution :
+- raccourcir le nom du champ
+- documenter la variable dans un fichier de description
 
--   raccourcir le nom du champ
--   documenter le champ dans un **fichier de description des variables**
+---
 
-------------------------------------------------------------------------
+## 4. Normalisation générale
 
-# Normalisation générale
+### Format du fichier
+Utiliser **CSV** (format ouvert, non propriétaire). Ce format permet la génération des **prévisualisations** et **datavisualisations automatiques** sur data.gouv.fr.
 
-## Format du fichier
+### Noms de champs
 
-Utiliser **CSV** (format ouvert, non propriétaire).
-Sur data.gouv.fr, ce format permet la génération des **prévisualisations** et des **datavisualisations automatisées**.
+#### Longueur
+Maximum **63 caractères**.
 
-------------------------------------------------------------------------
+#### Caractères autorisés
+- lettres
+- chiffres
+- `_`
+- `-`
 
-## Nom des champs
+Les espaces et caractères spéciaux peuvent provoquer des **erreurs lors de l’analyse du fichier**.
 
-### Longueur
+---
 
-Les noms de champs doivent comporter **moins de 63 caractères**.
-Au-delà, le fichier peut ne pas être analysé correctement.
+## 5. Données géographiques
 
-------------------------------------------------------------------------
-
-### Caractères autorisés
-
-Utiliser uniquement :
-
--   lettres
--   chiffres
--   `_`
--   `-`
-
-Utiliser des **noms de champs simples**, composés uniquement de lettres minuscules, chiffres, `_` ou `-`.
-
-Les espaces, majuscules et caractères spéciaux peuvent provoquer des **erreurs lors de l’analyse du fichier**, empêchant la génération de **prévisualisations ou de datavisualisations automatiques**.
-
-------------------------------------------------------------------------
-
-# Données géographiques
-
-Pour les référencements territoriaux, s'appuyer sur le **Code officiel géographique (COG)** :
-
+Pour les référencements territoriaux, utiliser le **Code officiel géographique (COG)** :
 https://www.insee.fr/fr/information/2560452
 
-Exemples de variables :
+### Exemples de variables
 
 - `code_commune`
 - `code_canton`
@@ -196,62 +161,55 @@ Exemples de variables :
 - `code_pays`
 - `codes_communes_outre_mer`
 
-------------------------------------------------------------------------
+### Code commune INSEE
+Utiliser `code_commune`. Le **code postal** n'est pas recommandé car un même code postal peut correspondre à plusieurs communes.
 
-## Code commune INSEE
+#### Paramétrage Excel
+```
+Format de cellule → Spécial → Code postal
+```
 
-Utiliser le **code commune du COG publié par l'INSEE**, via `code_commune`.
+---
 
-Le **code postal** n'est pas recommandé car un même code postal peut correspondre à plusieurs communes.
+## 6. SIRET
 
-### Paramétrage sous Excel
+### SIRET (14 caractères)
 
-Format de cellule :
-
-    Format de cellule → Spécial → Code postal
-
-Objectif : conserver les **zéros initiaux**.
-
-------------------------------------------------------------------------
-
-# SIRET (14 caractères)
-
-Référence :\
+Référence :
 https://annuaire-entreprises.data.gouv.fr/definitions/numero-siret
 
-Paramétrage sous Excel :
+Paramétrage Excel :
 
-    Format de cellule → Personnalisé
-    00000000000000
+```
+Format de cellule → Personnalisé
+00000000000000
+```
 
-Objectif : conserver les **14 chiffres** et les **zéros initiaux**.
+---
 
-------------------------------------------------------------------------
+## 7. SIREN
 
-# SIREN (9 caractères)
+### SIREN (9 caractères)
 
-Référence :\
+Référence :
 https://annuaire-entreprises.data.gouv.fr/definitions/numero-siren
 
-Paramétrage sous Excel :
+Paramétrage Excel :
 
-    Format de cellule → Personnalisé
-    000000000
+```
+Format de cellule → Personnalisé
+000000000
+```
 
-Objectif : conserver les **9 chiffres**.
+---
 
-------------------------------------------------------------------------
-
-# Valeurs nulles et zéros
+## 8. Valeurs nulles et zéros
 
 Dans un jeu de données :
+- `0` signifie **valeur connue égale à zéro**
+- une cellule vide signifie **information non renseignée**
 
--   `0` signifie **une valeur connue égale à zéro**
--   une cellule vide signifie **information non renseignée**
-
-Il est recommandé de :
-
--   ne pas utiliser `0` pour représenter une valeur manquante
--   laisser la cellule **vide** si l'information n'est pas disponible
--   documenter les conventions utilisées dans le **fichier de
-    description des variables**
+Recommandations :
+- ne pas utiliser `0` pour représenter une valeur manquante
+- laisser la cellule vide si l'information n'est pas disponible
+- documenter les conventions dans le fichier de description des variables
