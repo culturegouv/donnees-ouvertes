@@ -188,13 +188,13 @@ https://www.insee.fr/fr/information/2560452
 
 Exemples de variables :
 
-    `code_commune`
-    `code_canton`
-    `code_departement`
-    `code_region`
-    `code_arrondissement`
-    `code_pays`
-    `codes_communes_outre_mer`
+- `code_commune`
+- `code_canton`
+- `code_departement`
+- `code_region`
+- `code_arrondissement`
+- `code_pays`
+- `codes_communes_outre_mer`
 
 ------------------------------------------------------------------------
 
