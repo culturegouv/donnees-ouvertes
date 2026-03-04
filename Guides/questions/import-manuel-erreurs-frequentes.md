@@ -24,7 +24,7 @@ Elle vise à faciliter l'exploitation des données sur la plateforme, notamment 
 
 -   Utiliser le format **CSV**
 -   Utiliser des **noms de champs simples**, sans espaces ni caractères
-    spéciaux
+    spéciaux (sauf `_` ou `-`).
 -   Limiter les noms de champs à **63 caractères**
 -   Utiliser le **code commune INSEE** pour les référencements
     territoriaux
@@ -119,8 +119,7 @@ Exemple :
 
     06088 → 6088
 
-Solution : définir le format de cellule **Code postal** avant l'export
-CSV.
+Solution : définir le format de cellule **Code postal** avant l'export CSV.
 
 ------------------------------------------------------------------------
 
@@ -139,8 +138,7 @@ Solution : définir un format de cellule **Personnalisé** :
 **3 --- Nom de champ supérieur à 63 caractères**
 
 Conséquence :\
-Le fichier peut ne pas être analysé correctement et certaines
-**datavisualisations ne seront pas disponibles**.
+Le fichier peut ne pas être analysé correctement et certaines **datavisualisations ne seront pas disponibles**.
 
 Solution :
 
@@ -154,7 +152,6 @@ Solution :
 ## Format du fichier
 
 Utiliser **CSV** (format ouvert, non propriétaire).
-
 Sur data.gouv.fr, ce format permet la génération des **prévisualisations** et des **datavisualisations automatisées**.
 
 ------------------------------------------------------------------------
@@ -164,7 +161,6 @@ Sur data.gouv.fr, ce format permet la génération des **prévisualisations** et
 ### Longueur
 
 Les noms de champs doivent comporter **moins de 63 caractères**.
-
 Au-delà, le fichier peut ne pas être analysé correctement.
 
 ------------------------------------------------------------------------
@@ -178,7 +174,9 @@ Utiliser uniquement :
 -   `_`
 -   `-`
 
-Les espaces, majuscules et caractères spéciaux peuvent compliquer l'interopérabilité.
+Utiliser des **noms de champs simples**, composés uniquement de lettres minuscules, chiffres, `_` ou `-`.
+
+Les espaces, majuscules et caractères spéciaux peuvent provoquer des **erreurs lors de l’analyse du fichier**, empêchant la génération de **prévisualisations ou de datavisualisations automatiques**.
 
 ------------------------------------------------------------------------
 
