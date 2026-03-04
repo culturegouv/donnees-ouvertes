@@ -39,15 +39,6 @@ Elle vise à faciliter l'exploitation des données sur la plateforme, notamment 
 -   Structurer les données selon le principe : **une colonne = une
     information**
 
-Exemples :
-
-  Mauvaise pratique                         Bonne pratique
-  ----------------------------------------- --------------------------
-  SIREN et SIRET dans la même colonne       deux colonnes distinctes
-  code commune et code outre-mer mélangés   deux colonnes distinctes
-
-------------------------------------------------------------------------
-
 # Vérifications avant et après l'import
 
 Certaines transformations automatiques peuvent être appliquées par les tableurs (Excel, LibreOffice, etc.) lors de la préparation ou de l'export d'un fichier.\
