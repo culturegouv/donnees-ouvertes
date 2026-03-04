@@ -16,11 +16,14 @@ Comprendre le rôle et l’articulation entre *data.gouv.fr* et *culture.data.go
 ### [2. S’inscrire](Guides/inscription.md)  
 Créer son compte, rejoindre l’organisation “Ministère de la Culture” sur *data.gouv.fr* et obtenir un profil éditeur.  
 
-### [3. Publier ou modifier un jeu de données](Guides/publier_modifier.md)  
+### [3. Préparer ses données](Guides/preparer_donnees_datagouv.md)  
+Bonnes pratiques pour structurer et formater ses données avant publication : format CSV, structure des colonnes, référentiels (codes INSEE, SIREN/SIRET), vérifications avant import et erreurs fréquentes.
+
+### [4. Publier ou modifier un jeu de données](Guides/publier_modifier.md)  
 Étapes de publication, gestion des ressources, automatisation et bonnes pratiques de documentation.  
 
-### [4. Accompagnement et contacts](Guides/accompagnement_contacts.md)  
-Contacts, ressources, formations et aide du **Département des politiques numériques culturelles (DPNC)**.  
+### [5. Accompagnement et contacts](Guides/accompagnement_contacts.md)  
+Contacts, ressources, formations et aide du **Département des politiques numériques culturelles (DPNC)**.
 
 ---
 
