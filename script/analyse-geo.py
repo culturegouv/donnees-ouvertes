@@ -1,13 +1,14 @@
-import pandas as pd
-from csv_detective.format import FormatsManager
+#!/usr/bin/env bash
+set -euo pipefail
 
-fmtm = FormatsManager()
+URL="https://object.files.data.gouv.fr/hydra-geojson/hydra-geojson/fb6c3b2e-da8c-4e69-a719-6a96329e4cb2.geojson"
+OUT="geozones.gpkg"
+LAYER="geozones"
 
-url = "https://object.data.gouv.fr/ministere-culture/POP/joconde.csv"
+ogr2ogr -f GPKG "$OUT" "$URL" \
+  -nln "$LAYER" \
+  -t_srs EPSG:2154 \
+  -lco SPATIAL_INDEX=YES
 
-df = pd.read_csv(url, dtype=str, sep="|", usecols=["coordonnees"])
-
-print(df.loc[
-    (df["coordonnees"].notna())
-    & (~df["coordonnees"].apply(lambda c: fmtm.formats["latlon_wgs"].func(c)))
-])
+echo "GeoPackage créé : $OUT"
+echo "Couche : $LAYER"
