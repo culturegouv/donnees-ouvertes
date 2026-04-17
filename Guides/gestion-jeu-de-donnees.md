@@ -39,8 +39,14 @@ Elle permet :
 
 ## 📦 3. Gérer ses jeux de données  
 
-### Qu’est-ce qu’un jeu de données ?  
-Un **jeu de données** correspond à un **ensemble cohérent de fichiers** (par exemple : la liste des musées de France, les festivals soutenus, les monuments historiques classés, etc.).  
+### Qu’est-ce qu’un jeu de données ?
+
+Un **jeu de données** est un **ensemble cohéren de fichierst** autour d’un même sujet, avec une description et une ou plusieurs ressources associées. 
+(par exemple : la liste des musées de France, les festivals soutenus, les monuments historiques classés, etc.).  
+
+Concrètement, un jeu de données est composés de  :
+**métadonnées** : titre, description, licence, fréquence de mise à jour, mots-clés, couverture temporelle, granularité spatiale, etc. Le guide insiste sur le fait que cette description est essentielle pour le référencement et la réutilisation.
+**ressources** : un ou plusieurs fichiers ou liens qui portent effectivement les données. Ces ressources peuvent être hébergées sur data.gouv.fr ou rester sur un serveur externe.  
 
 Chaque jeu contient une ou plusieurs **ressources**, c’est-à-dire les fichiers eux-mêmes (formats : CSV, XLSX, JSON, GeoJSON, etc.).  
 
