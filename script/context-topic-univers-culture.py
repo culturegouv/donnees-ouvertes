@@ -8,7 +8,7 @@ from datagouv import Client, Topic
 
 TOPIC_ID = "univers-culture"
 ENVIRONMENT = "www"  # "www" (prod), "demo" ou "dev"
-OUTPUT_DIR = "UsineSchema"
+OUTPUT_DIR = "data"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
