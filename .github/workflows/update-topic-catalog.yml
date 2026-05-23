@@ -1,0 +1,49 @@
+name: Update topic catalog
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic_slug:
+        description: 'Slug du topic data.gouv.fr à traiter'
+        required: true
+        default: 'univers-culture-deps'
+  schedule:
+    # Tous les lundis à 4h UTC
+    - cron: '0 4 * * 1'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pandas
+
+      - name: Generate topic catalog
+        env:
+          TOPIC_SLUG: ${{ github.event.inputs.topic_slug || 'univers-culture-deps' }}
+        run: python script/catalog-topic.py
+
+      - name: Commit generated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "Aucun changement à commiter"
+          else
+            git commit -m "chore: update catalog for ${TOPIC_SLUG}"
+            git push
+          fi
+        env:
+          TOPIC_SLUG: ${{ github.event.inputs.topic_slug || 'univers-culture-deps' }}
