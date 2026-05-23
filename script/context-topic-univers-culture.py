@@ -86,7 +86,7 @@ def build_catalog_for_topic(topic_id, client):
 
 
 if __name__ == "__main__":
-    client = Client(environment=ENVIRONMENT)
+    client = Client(environment=ENVIRONMENT, timeout=60)
     df = build_catalog_for_topic(TOPIC_ID, client)
 
     output_file = f"{OUTPUT_DIR}/schema_topic_{TOPIC_ID}.csv"
