@@ -1,62 +1,60 @@
 # -*- coding: utf-8 -*-
 import csv
+import json
 import os
 import time
 from datetime import datetime, timezone
+from urllib.error import HTTPError, URLError
+from urllib.request import Request, urlopen
 
 import pandas as pd
-import requests
 from datagouv import Client, Topic
 
 TOPIC_ID = "univers-culture"
-ENVIRONMENT = "www"  # "www" (prod), "demo" ou "dev"
+ENVIRONMENT = "www"
 OUTPUT_DIR = "data"
 
 TABULAR_API_BASE = "https://tabular-api.data.gouv.fr/api/resources"
 REQUEST_TIMEOUT = 30
 MAX_RETRIES = 2
-RETRY_BACKOFF = 2  # secondes
+RETRY_BACKOFF = 2
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 
-def fetch_profile(resource_id, session):
+def fetch_profile(resource_id):
     """Récupère le profil tabulaire via l'API Tabular.
     Retourne None si la ressource n'est pas APIfiée ou en cas d'erreur."""
     url = f"{TABULAR_API_BASE}/{resource_id}/profile/"
+    req = Request(url, headers={"Accept": "application/json"})
 
     for attempt in range(MAX_RETRIES + 1):
         try:
-            response = session.get(url, timeout=REQUEST_TIMEOUT)
-        except requests.RequestException as exc:
+            with urlopen(req, timeout=REQUEST_TIMEOUT) as response:
+                content_type = response.headers.get("Content-Type", "")
+                if "json" not in content_type.lower():
+                    print(f"Profil indisponible {resource_id} : réponse non-JSON ({content_type})")
+                    return None
+                try:
+                    return json.loads(response.read().decode("utf-8"))
+                except ValueError as exc:
+                    print(f"Profil indisponible {resource_id} : JSON invalide ({exc})")
+                    return None
+
+        except HTTPError as exc:
+            if exc.code == 404:
+                return None
+            if exc.code >= 500 and attempt < MAX_RETRIES:
+                time.sleep(RETRY_BACKOFF * (attempt + 1))
+                continue
+            print(f"Profil indisponible {resource_id} : HTTP {exc.code}")
+            return None
+
+        except URLError as exc:
             if attempt < MAX_RETRIES:
                 time.sleep(RETRY_BACKOFF * (attempt + 1))
                 continue
-            print(f"Profil indisponible {resource_id} : {exc}")
-            return None
-
-        if response.status_code == 404:
-            # Ressource non exposée par l'API tabulaire : silencieux
-            return None
-
-        if response.status_code >= 500 and attempt < MAX_RETRIES:
-            time.sleep(RETRY_BACKOFF * (attempt + 1))
-            continue
-
-        if not response.ok:
-            print(f"Profil indisponible {resource_id} : HTTP {response.status_code}")
-            return None
-
-        # Vérifie qu'on a bien du JSON (pas une page d'erreur HTML)
-        content_type = response.headers.get("Content-Type", "")
-        if "json" not in content_type.lower():
-            print(f"Profil indisponible {resource_id} : réponse non-JSON ({content_type})")
-            return None
-
-        try:
-            return response.json()
-        except ValueError as exc:
-            print(f"Profil indisponible {resource_id} : JSON invalide ({exc})")
+            print(f"Profil indisponible {resource_id} : {exc.reason}")
             return None
 
     return None
@@ -90,25 +88,27 @@ def extract_column_row(
         "score": col_meta.get("score", ""),
         "nb_distinct": col_stats.get("nb_distinct", ""),
         "nb_missing_values": col_stats.get("nb_missing_values", ""),
-        "top_1": tops[0]["value"] if len(tops) > 0 else "",
-        "top_2": tops[1]["value"] if len(tops) > 1 else "",
-        "top_3": tops[2]["value"] if len(tops) > 2 else "",
+        "top_1": tops[0].get("value", "") if len(tops) > 0 and isinstance(tops[0], dict) else "",
+        "top_2": tops[1].get("value", "") if len(tops) > 1 and isinstance(tops[1], dict) else "",
+        "top_3": tops[2].get("value", "") if len(tops) > 2 and isinstance(tops[2], dict) else "",
     }
 
 
-def build_catalog_for_topic(topic_id, client, session):
+def build_catalog_for_topic(topic_id, client):
     rows = []
     generated_at = datetime.now(timezone.utc).isoformat()
 
     topic = Topic(topic_id, _client=client)
+    datasets = list(topic.datasets)
+    print(f"{len(datasets)} datasets trouvés dans le topic {topic_id}")
 
-    for dataset in topic.datasets:
-        for resource in dataset.resources:
-            profile_payload = fetch_profile(resource.id, session)
+    for i, dataset in enumerate(datasets, start=1):
+        print(f"[{i}/{len(datasets)}] {dataset.id} - {getattr(dataset, 'title', '')}")
+        for resource in getattr(dataset, "resources", []) or []:
+            profile_payload = fetch_profile(resource.id)
             if profile_payload is None:
                 continue
 
-            # L'API renvoie { "profile": { "header": [...], "columns": {...}, "profile": {...} } }
             profile = profile_payload.get("profile", profile_payload)
             header = profile.get("header", []) or []
             columns = profile.get("columns", {}) or {}
@@ -132,10 +132,7 @@ def build_catalog_for_topic(topic_id, client, session):
 
 if __name__ == "__main__":
     client = Client(environment=ENVIRONMENT, timeout=60)
-
-    with requests.Session() as session:
-        session.headers.update({"Accept": "application/json"})
-        df = build_catalog_for_topic(TOPIC_ID, client, session)
+    df = build_catalog_for_topic(TOPIC_ID, client)
 
     output_file = f"{OUTPUT_DIR}/schema_topic_{TOPIC_ID}.csv"
     df.to_csv(
