@@ -1,16 +1,65 @@
 # -*- coding: utf-8 -*-
 import csv
 import os
+import time
 from datetime import datetime, timezone
 
 import pandas as pd
+import requests
 from datagouv import Client, Topic
 
 TOPIC_ID = "univers-culture"
 ENVIRONMENT = "www"  # "www" (prod), "demo" ou "dev"
 OUTPUT_DIR = "data"
 
+TABULAR_API_BASE = "https://tabular-api.data.gouv.fr/api/resources"
+REQUEST_TIMEOUT = 30
+MAX_RETRIES = 2
+RETRY_BACKOFF = 2  # secondes
+
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+
+def fetch_profile(resource_id, session):
+    """Récupère le profil tabulaire via l'API Tabular.
+    Retourne None si la ressource n'est pas APIfiée ou en cas d'erreur."""
+    url = f"{TABULAR_API_BASE}/{resource_id}/profile/"
+
+    for attempt in range(MAX_RETRIES + 1):
+        try:
+            response = session.get(url, timeout=REQUEST_TIMEOUT)
+        except requests.RequestException as exc:
+            if attempt < MAX_RETRIES:
+                time.sleep(RETRY_BACKOFF * (attempt + 1))
+                continue
+            print(f"Profil indisponible {resource_id} : {exc}")
+            return None
+
+        if response.status_code == 404:
+            # Ressource non exposée par l'API tabulaire : silencieux
+            return None
+
+        if response.status_code >= 500 and attempt < MAX_RETRIES:
+            time.sleep(RETRY_BACKOFF * (attempt + 1))
+            continue
+
+        if not response.ok:
+            print(f"Profil indisponible {resource_id} : HTTP {response.status_code}")
+            return None
+
+        # Vérifie qu'on a bien du JSON (pas une page d'erreur HTML)
+        content_type = response.headers.get("Content-Type", "")
+        if "json" not in content_type.lower():
+            print(f"Profil indisponible {resource_id} : réponse non-JSON ({content_type})")
+            return None
+
+        try:
+            return response.json()
+        except ValueError as exc:
+            print(f"Profil indisponible {resource_id} : JSON invalide ({exc})")
+            return None
+
+    return None
 
 
 def extract_column_row(
@@ -47,7 +96,7 @@ def extract_column_row(
     }
 
 
-def build_catalog_for_topic(topic_id, client):
+def build_catalog_for_topic(topic_id, client, session):
     rows = []
     generated_at = datetime.now(timezone.utc).isoformat()
 
@@ -55,15 +104,11 @@ def build_catalog_for_topic(topic_id, client):
 
     for dataset in topic.datasets:
         for resource in dataset.resources:
-            # resource.profile lève une exception si la ressource n'est pas APIfiée
-            try:
-                profile_payload = resource.profile
-            except Exception as exc:
-                print(f"Profil tabulaire indisponible {resource.id} : {exc}")
+            profile_payload = fetch_profile(resource.id, session)
+            if profile_payload is None:
                 continue
 
-            # Le client renvoie le payload complet de l'API tabulaire,
-            # qui contient une clé "profile" wrappant header/columns/profile.
+            # L'API renvoie { "profile": { "header": [...], "columns": {...}, "profile": {...} } }
             profile = profile_payload.get("profile", profile_payload)
             header = profile.get("header", []) or []
             columns = profile.get("columns", {}) or {}
@@ -87,7 +132,10 @@ def build_catalog_for_topic(topic_id, client):
 
 if __name__ == "__main__":
     client = Client(environment=ENVIRONMENT, timeout=60)
-    df = build_catalog_for_topic(TOPIC_ID, client)
+
+    with requests.Session() as session:
+        session.headers.update({"Accept": "application/json"})
+        df = build_catalog_for_topic(TOPIC_ID, client, session)
 
     output_file = f"{OUTPUT_DIR}/schema_topic_{TOPIC_ID}.csv"
     df.to_csv(
