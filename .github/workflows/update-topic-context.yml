@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pandas datagouv
+          pip install pandas datagouv-client
 
       - name: Generate topic context catalog
         run: |
