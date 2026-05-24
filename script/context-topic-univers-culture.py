@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 ⚠️ SCRIPT DÉPRÉCIÉ — ne plus utiliser.
 
@@ -24,9 +25,6 @@ plusieurs semaines de runs réussis sur le nouveau script.
 """
 
 
-
-
-# -*- coding: utf-8 -*-
 import csv
 import json
 import os
