@@ -1,3 +1,31 @@
+"""
+⚠️ SCRIPT DÉPRÉCIÉ — ne plus utiliser.
+
+Remplacé le 24 mai 2026 par `script/catalog-topic.py`, qui interroge
+directement l'API REST data.gouv.fr (endpoints v2/topics et v1/datasets)
+au lieu de passer par le SDK `datagouv-client`.
+
+Motif du remplacement :
+- Le SDK fait un appel HTTP par dataset lors de l'itération `topic.datasets`
+  (chaque `Dataset(id)` déclenche un `refresh()` qui appelle `/api/1/datasets/<id>/`).
+- Sur les gros topics (~1000 datasets), l'enchaînement de requêtes via
+  `httpx` finit régulièrement par échouer sur `RemoteProtocolError:
+  Server disconnected without sending a response` après une dizaine de minutes.
+- Le run automatique du 24/05/2026 06:00 UTC a échoué après 13 min sur ce motif,
+  alors que le run manuel de la veille avait pourtant réussi en ~1h sur le même
+  topic (`univers-culture`, ~1050 datasets).
+
+Le workflow associé (`.github/workflows/update-topic-context.yml`) a été
+supprimé à la même date. Voir le nouveau workflow
+`update-topic-catalog.yml` pour le remplacement.
+
+Conservé en l'état pour traçabilité — à supprimer définitivement après
+plusieurs semaines de runs réussis sur le nouveau script.
+"""
+
+
+
+
 # -*- coding: utf-8 -*-
 import csv
 import json
