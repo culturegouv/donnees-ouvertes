@@ -1,12 +1,12 @@
 "generated_at","topic_id","id.dataset","title.dataset","description.dataset","tags.dataset","created_at.dataset","last_modified.dataset","archived.dataset"
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","5af120e5a3a7295e54c41a13","Pratiques culturelles des français - Evolution 1973-2008","Tableaux thématiques comparant les résultats statistiques des cinq enquêtes ""Pratiques culturelles des français"".
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","5af120e5a3a7295e54c41a13","Pratiques culturelles des français - Evolution 1973-2008","Tableaux thématiques comparant les résultats statistiques des cinq enquêtes ""Pratiques culturelles des français"".
 
 ****
 
 Ces tableaux sont issus de l'analyse rétrospective des résultats des cinq enquêtes Pratiques culturelles des français : 1973, 1981, 1988, 1997, 2008.
 
 [Pour en savoir plus sur les enquêtes](http://www.pratiquesculturelles.culture.gouv.fr/) ""Pratiques culturelles des français"" réalisées par le ministère de la Culture et de la Communication.","culture;deps-doc;ministeredelaculture","2018-05-08T06:00:37.941000+00:00","2025-11-05T16:22:57.991000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","5af120e7b595087cfabcde82","Fréquentation des Musées de France","Fréquentation totale, payante et gratuite dans les Musées de France de 2001 à 2022.
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","5af120e7b595087cfabcde82","Fréquentation des Musées de France","Fréquentation totale, payante et gratuite dans les Musées de France de 2001 à 2022.
 
 2001 : Les musées n'avaient pas encore l'appellation. Ils avaient le statut de musée classé ou contrôlé.  
 2002 : Loi musée de janvier 2002. Les musées nationaux et les musées classés sont devenus automatiquement des musées de France.  
@@ -19,8 +19,8 @@ La colonne ""Note"": signale : ""F"" : le musée est fermé ; ""NC"" : la fréqu
 **A partir de 2019, l'identifiant (ID MUSEOFILE) de la[base Muséofile](https://data.culture.gouv.fr/explore/dataset/musees-de-france-base-museofile) a été ajouté**.  
 
 
-[Pour en savoir plus](https://www.culture.gouv.fr/Thematiques/Etudes-et-statistiques/Publications) sur la fréquentation des patrimoines.","culture;deps-doc;frequentation;ministeredelaculture;musees","2018-05-08T06:00:38.918000+00:00","2026-06-08T17:06:00.769000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","61777ddaa9101d073e5506cd","Base des lieux et équipements culturels (Basilic)","Cette base géocodée des sites, lieux et équipements culturels est conçue et administrée par le département des études, de la prospective, des statistiques et de la documentation du ministère de la Culture. Elle alimente notamment la [base permanente des équipements](https://www.insee.fr/fr/metadonnees/source/serie/s1161) de l’Insee et l'[Atlas Culture des territoires](https://atlasculture.fr/).
+[Pour en savoir plus](https://www.culture.gouv.fr/Thematiques/Etudes-et-statistiques/Publications) sur la fréquentation des patrimoines.","culture;deps-doc;frequentation;ministeredelaculture;musees","2018-05-08T06:00:38.918000+00:00","2026-06-18T15:47:23.597000+00:00",""
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","61777ddaa9101d073e5506cd","Base des lieux et équipements culturels (Basilic)","Cette base géocodée des sites, lieux et équipements culturels est conçue et administrée par le département des études, de la prospective, des statistiques et de la documentation du ministère de la Culture. Elle alimente notamment la [base permanente des équipements](https://www.insee.fr/fr/metadonnees/source/serie/s1161) de l’Insee et l'[Atlas Culture des territoires](https://atlasculture.fr/).
 
 Elle est réalisée par agrégation de différentes sources : bases de la direction générale des patrimoines et de l’architecture, de la direction générale de la création artistique, de la direction générale des médias et des industries culturelles, de la délégation générale à la transmission, aux territoires et à la démocratie culturelle, du Centre national du cinéma et de l'image animée, du Centre national du livre, du Centre national des arts du cirque, de la rue et du théâtre (Artcena), de la Médiathèque du patrimoine et de la photographie. 
 
@@ -29,7 +29,7 @@ Elle porte sur le champ de la France entière.
 Une liste détaillée des types de structure recensées dans la colonne « Label et appellation » est téléchargeable ci-dessous (voir Pièces jointes).
 
 Malgré le travail de vérification, de nettoyage et de certification des bases, il peut subsister, compte tenu du nombre d'entrées, quelques erreurs (doublons ou erreurs d'adressage) et oublis. N'hésitez pas à nous les signaler en écrivant à : atlasculture@culture.gouv.fr.","culture;deps-doc;ministeredelaculture","2021-10-26T06:02:34.755000+00:00","2026-02-18T08:43:43.303000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","62cf95993d99f22480f49334","Liste des festivals en France","Sont considérés comme festivals les événements qui répondent aux critères suivants :   
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","62cf95993d99f22480f49334","Liste des festivals en France","Sont considérés comme festivals les événements qui répondent aux critères suivants :   
 \- avoir eu lieu en 2019  
 \- avoir connu au moins deux éditions en 2019  
 \- se dérouler sur plus d’une journée  
@@ -39,7 +39,7 @@ Le choix a été fait de retenir l’année 2019 qui devient, dans le champ cult
 Source : Cartographie nationale, Ministère de la Culture, Deps-doc / France festivals / Cepel, 2022
 
 NB : en l'absence d'adresse postale, le festival est géolocalisé par rapport au centroïde de la commune.","arts-plastiques;cinema;culture;deps-doc;festival;livre-lecture;ministeredelaculture;musique;spectacle-vivant","2022-07-14T06:03:37.681000+00:00","2025-11-05T16:22:52.952000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","62da21021d3f7025e69ef260","Dépenses culturelles des communes","**Dépenses culturelles des communes de 3 500 habitants** : dépenses culturelles de fonctionnement, dépenses culturelles d'investissement, en milliers d'euros, en euros par habitant et en pourcentage des dépenses totales pour chaque commune.
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","62da21021d3f7025e69ef260","Dépenses culturelles des communes","**Dépenses culturelles des communes de 3 500 habitants** : dépenses culturelles de fonctionnement, dépenses culturelles d'investissement, en milliers d'euros, en euros par habitant et en pourcentage des dépenses totales pour chaque commune.
 
 NB : les dépenses de fonctionnement sont destinées au fonctionnement courant de la collectivité, de ses services et des activités culturelles qu'elle finance ; les dépenses d'investissement comprennent des opérations qui modifient la consistance ou la valeur du patrimoine de la collectivité (constructions, gros aménagements, travaux d'infrastructure, achats de biens ""durables"", etc.).
 
@@ -49,49 +49,49 @@ Depenses\_F : dépenses  de fonctionnement ; Depenses\_I : dépenses d'investis
 **Source** : comptes de gestion 2023 des communes, Direction générale des finances publiques, ministère chargé de l’Économie, traitement Deps-Doc, ministère de la Culture, 2025
 
 ","budget-culturel;collectivite-locale;collectivites-territoriales;culture;culture-communale;depenses;depenses-fonctionnement;depenses-investissement;deps-doc;ministeredelaculture","2022-07-22T06:01:06.469000+00:00","2026-06-01T17:16:01.714000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","633518ec6b559831b7eacfa4","Dépenses du ministère de la Culture par département","Dépenses du ministère de la Culture par département en 2019. Ces dépenses ne comprennent pas les dépenses de personnel. 
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","633518ec6b559831b7eacfa4","Dépenses du ministère de la Culture par département","Dépenses du ministère de la Culture par département en 2019. Ces dépenses ne comprennent pas les dépenses de personnel. 
 
 Source : département de l'analyse budgétaire et de la synthèse, traitement Deps-Doc, ministère de la Culture, 2022","culture;deps-doc;ministeredelaculture","2022-09-29T06:02:52.495000+00:00","2025-11-05T16:22:47.176000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","633518ec7d88ad6fb4eacfa4","Dépenses culturelles des régions par secteur","**Dépenses culturelles des régions par secteur en 2019 et en 2020** , en milliers d’euros et en euros par habitant, pour chaque collectivité régional (y compris Collectivité territoriale unique de Guyane, Martinique et Collectivité de Corse). 
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","633518ec7d88ad6fb4eacfa4","Dépenses culturelles des régions par secteur","**Dépenses culturelles des régions par secteur en 2019 et en 2020** , en milliers d’euros et en euros par habitant, pour chaque collectivité régional (y compris Collectivité territoriale unique de Guyane, Martinique et Collectivité de Corse). 
 
 Source : comptes de gestion 2019 des régions, Direction générale des finances publiques, ministère chargé de l’Économie, traitement Deps-Doc, ministère de la Culture, 2023","culture;deps-doc;ministeredelaculture","2022-09-29T06:02:52.330000+00:00","2025-11-05T16:22:50.566000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","633518ecb5deca30cdeacfa4","Dépenses du ministère de la Culture en région","Dépenses du ministère de la Culture par région en 2019. 
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","633518ecb5deca30cdeacfa4","Dépenses du ministère de la Culture en région","Dépenses du ministère de la Culture par région en 2019. 
 
 Source : département de l'analyse budgétaire et de la synthèse, service des ressources humaines, traitement Deps-Doc, ministère de la Culture, 2022","culture;deps-doc;ministeredelaculture","2022-09-29T06:02:52.486000+00:00","2025-11-05T16:22:49.152000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","633669cd02685f4c8beacfa5","Contrats départementaux lecture","Liste des départements ayant contractualisé un contrat territoire-lecture avec l’État au 31.12.2021.","culture;deps-doc;ministeredelaculture","2022-09-30T06:00:13.727000+00:00","2025-11-05T16:22:45.946000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","633bafd4a3f5260a3ceacfa6","Plan de relance : projets soutenus par le ministère de la Culture","Données au 17 décembre 2021.","culture;deps-doc;ministeredelaculture","2022-10-04T06:00:20.542000+00:00","2025-11-05T16:22:44.693000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","6340f6052cbb8188ebeacfa4","Dépenses culturelles des départements par secteur","**Dépenses culturelles 2019 et 2020 des départements par secteur,** en milliers d'euros et en euros par habitant, pour chaque collectivité départementale (y compris Mayotte). 
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","633669cd02685f4c8beacfa5","Contrats départementaux lecture","Liste des départements ayant contractualisé un contrat territoire-lecture avec l’État au 31.12.2021.","culture;deps-doc;ministeredelaculture","2022-09-30T06:00:13.727000+00:00","2025-11-05T16:22:45.946000+00:00",""
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","633bafd4a3f5260a3ceacfa6","Plan de relance : projets soutenus par le ministère de la Culture","Données au 17 décembre 2021.","culture;deps-doc;ministeredelaculture","2022-10-04T06:00:20.542000+00:00","2025-11-05T16:22:44.693000+00:00",""
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","6340f6052cbb8188ebeacfa4","Dépenses culturelles des départements par secteur","**Dépenses culturelles 2019 et 2020 des départements par secteur,** en milliers d'euros et en euros par habitant, pour chaque collectivité départementale (y compris Mayotte). 
 
 Source : comptes de gestion 2019 des départements, Direction générale des finances publiques, ministère chargé de l'Economie, traitement Deps-Doc, ministère de la Culture, 2022","culture;deps-doc;ministeredelaculture","2022-10-08T06:01:09.566000+00:00","2025-11-05T16:22:43.409000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","6340f606a6550b8bf4eacfa4","Dépenses culturelles des départements","**Dépenses culturelles 2023 des départements** : dépenses culturelles de fonctionnement et d'investissement, en euros et en euros par habitant (y compris Mayotte).\
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","6340f606a6550b8bf4eacfa4","Dépenses culturelles des départements","**Dépenses culturelles 2023 des départements** : dépenses culturelles de fonctionnement et d'investissement, en euros et en euros par habitant (y compris Mayotte).\
 NB : les dépenses de fonctionnement sont destinées au fonctionnement courant de la collectivité, de ses services et des activités culturelles qu'elle finance ; les dépenses d'investissement comprennent des opérations qui modifient la consistance ou la valeur du patrimoine de la collectivité (constructions, gros aménagements, travaux d'infrastructure, achats de biens ""durables"", etc.).
 
 Source : comptes de gestion 2023 des départements, Direction générale des finances publiques, ministère chargé de l'Economie, traitement Deps-Doc, ministère de la Culture, 2025
 
 ","budget;collectivite;culture;deps-doc;ministeredelaculture;politique-culturelle;subvention","2022-10-08T06:01:10.485000+00:00","2026-06-01T17:22:57.030000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","6340f606d04658a4a4eacfa4","Dépenses culturelles des intercommunalités par secteur","**Dépenses culturelles 2019 et 2020 des établissements publics de coopération intercommunale (EPCI) comptant au moins une commune de 3 500 habitants ou plus, par secteur** : en pourcentage des dépenses culturelles totales, pour chaque EPCI (y compris Métropole de Lyon). 
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","6340f606d04658a4a4eacfa4","Dépenses culturelles des intercommunalités par secteur","**Dépenses culturelles 2019 et 2020 des établissements publics de coopération intercommunale (EPCI) comptant au moins une commune de 3 500 habitants ou plus, par secteur** : en pourcentage des dépenses culturelles totales, pour chaque EPCI (y compris Métropole de Lyon). 
 
 Source : comptes de gestion 2019 des départements, Direction générale des finances publiques, ministère chargé de l'Economie, traitement Deps-Doc, ministère de la Culture, 2023","culture;deps-doc;ministeredelaculture","2022-10-08T06:01:10.487000+00:00","2025-11-05T16:22:40.527000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","6340f607b1c7e116b5eacfa4","Dépenses culturelles des intercommunalités","**Dépenses culturelles des établissements publics de coopération intercommunale (EPCI)** comptant au moins une commune de 3 500 habitants ou plus : dépenses culturelles de fonctionnement et d'investissement, en euros et en euros par habitant pour chaque EPCI (y compris Métropole de Lyon).\
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","6340f607b1c7e116b5eacfa4","Dépenses culturelles des intercommunalités","**Dépenses culturelles des établissements publics de coopération intercommunale (EPCI)** comptant au moins une commune de 3 500 habitants ou plus : dépenses culturelles de fonctionnement et d'investissement, en euros et en euros par habitant pour chaque EPCI (y compris Métropole de Lyon).\
 NB : les dépenses de fonctionnement sont destinées au fonctionnement courant de la collectivité, de ses services et des activités culturelles qu'elle finance ; les dépenses d'investissement comprennent des opérations qui modifient la consistance ou la valeur du patrimoine de la collectivité (constructions, gros aménagements, travaux d'infrastructure, achats de biens ""durables"", etc.).
 
 Source : comptes de gestion 2023 des EPCI, Direction générale des finances publiques, ministère chargé de l'Economie, traitement Deps-Doc, ministère de la Culture, 2025
 ","budget-culturel;culture;depenses-fonctionnement;depenses-investissement;deps-doc;intercommunalite;ministeredelaculture;politique-culturelle","2022-10-08T06:01:11.369000+00:00","2026-06-01T17:20:12.694000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","6350c885ecad6abcaa90f68f","JO 2024 : EPCI labellisés Terres de jeux 2024","Établissements publics de coopération intercommunale labellisés Terres de jeux 2024.
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","6350c885ecad6abcaa90f68f","JO 2024 : EPCI labellisés Terres de jeux 2024","Établissements publics de coopération intercommunale labellisés Terres de jeux 2024.
 
 Le label Terre de Jeux 2024 permet à toutes les collectivités territoriales et aux acteurs du mouvement sportif, qui partagent la conviction que le sport peut changer les vies, de se fédérer autour d'un projet commun.","culture;deps-doc;ministeredelaculture","2022-10-20T06:03:17.037000+00:00","2025-11-05T16:22:37.531000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","6350c886dbe7e0f35f90f68e","Entreprises : évolution du chiffre d'affaires 2020 des librairies","Mesure de l'évolution du chiffre d'affaires des entreprises monorégionales de librairie (code Naf 47.61Z), pérennes entre 2018 et 2020\. À l'échelle métropolitaine, hors Corse, l'évolution a été de -7,1 %.","culture;deps-doc;ministeredelaculture","2022-10-20T06:03:18.700000+00:00","2025-11-05T16:22:36.304000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","6350c887210de3789f90f68e","Entreprises : évolution du chiffre d'affaires 2020 du spectacle vivant","Mesure de l'écart de chiffre d'affaires réalisé en 2019 et en 2020 par les entreprises monorégionales de spectacle vivant, ayant leur siège dans la région où elles exercent leur activité, et pérennes entre 2018 et 2020.  
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","6350c886dbe7e0f35f90f68e","Entreprises : évolution du chiffre d'affaires 2020 des librairies","Mesure de l'évolution du chiffre d'affaires des entreprises monorégionales de librairie (code Naf 47.61Z), pérennes entre 2018 et 2020\. À l'échelle métropolitaine, hors Corse, l'évolution a été de -7,1 %.","culture;deps-doc;ministeredelaculture","2022-10-20T06:03:18.700000+00:00","2025-11-05T16:22:36.304000+00:00",""
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","6350c887210de3789f90f68e","Entreprises : évolution du chiffre d'affaires 2020 du spectacle vivant","Mesure de l'écart de chiffre d'affaires réalisé en 2019 et en 2020 par les entreprises monorégionales de spectacle vivant, ayant leur siège dans la région où elles exercent leur activité, et pérennes entre 2018 et 2020.  
 À l'échelle de la France métropolitaine, hors Corse, l'écart mesuré est de -60 %.","culture;deps-doc;ministeredelaculture","2022-10-20T06:03:19.240000+00:00","2025-11-05T16:22:33.830000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","6350c887cec32b14bc90f68e","JO 2024 : régions labellisées Terres de jeux 2024","Le label Terre de Jeux 2024 permet à toutes les collectivités territoriales et aux acteurs du mouvement sportif, qui partagent la conviction que le sport peut changer les vies, de se fédérer autour d'un projet commun. Les collectivités labellisées peuvent proposer des projets dans le cadre de l'olympiade culturelle en 2024.  
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","6350c887cec32b14bc90f68e","JO 2024 : régions labellisées Terres de jeux 2024","Le label Terre de Jeux 2024 permet à toutes les collectivités territoriales et aux acteurs du mouvement sportif, qui partagent la conviction que le sport peut changer les vies, de se fédérer autour d'un projet commun. Les collectivités labellisées peuvent proposer des projets dans le cadre de l'olympiade culturelle en 2024.  
   
 Source  
 terredejeux.paris2024.org","culture;deps-doc;ministeredelaculture","2022-10-20T06:03:19.111000+00:00","2025-11-05T16:22:35.166000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","6350c887d95d644f9c487174","JO 2024 : communes labellisées Terres de jeux 2024","Liste des communes labellisées Terres de jeux 2024.  
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","6350c887d95d644f9c487174","JO 2024 : communes labellisées Terres de jeux 2024","Liste des communes labellisées Terres de jeux 2024.  
   
 Le label Terre de Jeux 2024 permet à toutes les collectivités territoriales et aux acteurs du mouvement sportif, qui partagent la conviction que le sport peut changer les vies, de se fédérer autour d'un projet commun.","culture;deps-doc;ministeredelaculture","2022-10-20T06:03:19.314000+00:00","2025-11-05T16:22:32.578000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","6350c887ecad6abcaa90f690","Entreprises : évolution du chiffres d'affaires 2020 des salles de cinémas","Mesure de l'écart de chiffre d'affaires en 2020 par rapport à 2019 réalisé par les entreprises monorégionales de projection cinématographique (code Naf 59.14Z), ayant leur siège dans la région où elles exercent leur activité et pérennes entre 2018 et 2020. À l'échelle de la France métropolitaine, hors Corse, l'écart est de -65 %.","culture;deps-doc;ministeredelaculture","2022-10-20T06:03:19.591000+00:00","2025-11-05T16:22:31.320000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","6358b1057280fb6a2a90f68e","Emploi : Actifs des secteurs culturels par région","Part des actifs des secteurs culturels dans l'ensemble des actifs de la région.
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","6350c887ecad6abcaa90f690","Entreprises : évolution du chiffres d'affaires 2020 des salles de cinémas","Mesure de l'écart de chiffre d'affaires en 2020 par rapport à 2019 réalisé par les entreprises monorégionales de projection cinématographique (code Naf 59.14Z), ayant leur siège dans la région où elles exercent leur activité et pérennes entre 2018 et 2020. À l'échelle de la France métropolitaine, hors Corse, l'écart est de -65 %.","culture;deps-doc;ministeredelaculture","2022-10-20T06:03:19.591000+00:00","2025-11-05T16:22:31.320000+00:00",""
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","6358b1057280fb6a2a90f68e","Emploi : Actifs des secteurs culturels par région","Part des actifs des secteurs culturels dans l'ensemble des actifs de la région.
 
 La population concernée rassemble les actifs en emploi, qu'ils soient salariés ou indépendants. Au sein de la nomenclature d'activités française de l'Insee, sont considérés comme culturels les secteurs suivants :  
 \- architecture  
@@ -104,8 +104,8 @@ La population concernée rassemble les actifs en emploi, qu'ils soient salariés
 \- spectacle vivant
 
 Données 2017","culture;deps-doc;ministeredelaculture","2022-10-26T06:01:09.390000+00:00","2025-11-05T16:22:30.068000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","6358b1077649e63c98487174","Entreprises : Nombre d'établissements culturels actifs par région","Désigne la part des entreprises culturelles au sein de l'ensemble des entreprises employeuses du secteur marchand de la région.","culture;deps-doc;ministeredelaculture","2022-10-26T06:01:10.990000+00:00","2025-11-05T16:22:28.853000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","635a0251ae37fbcc1290f691","Emploi : Professions culturelles par département","Part des actifs exerçant une profession culturelle dans l’ensemble des actifs du département.
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","6358b1077649e63c98487174","Entreprises : Nombre d'établissements culturels actifs par région","Désigne la part des entreprises culturelles au sein de l'ensemble des entreprises employeuses du secteur marchand de la région.","culture;deps-doc;ministeredelaculture","2022-10-26T06:01:10.990000+00:00","2025-11-05T16:22:28.853000+00:00",""
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","635a0251ae37fbcc1290f691","Emploi : Professions culturelles par département","Part des actifs exerçant une profession culturelle dans l’ensemble des actifs du département.
 
 La population concernée rassemble les actifs en emploi, qu'ils soient salariés ou indépendants. 
 
@@ -118,7 +118,7 @@ Au sein de la nomenclature des professions et des catégories socioprofessionnel
 \- professeurs d'art (hors établissements scolaires)
 
 Données 2017","culture;deps-doc;ministeredelaculture","2022-10-27T06:00:17.896000+00:00","2025-11-05T16:22:23.805000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","635a0251dc41dc073190f68f","Emploi : Actifs des secteurs culturels par zone d'emploi","Part des actifs des secteurs culturels dans l'ensemble des actifs de la zone d'emploi. La population concernée rassemble les actifs en emploi, qu'ils soient salariés ou indépendants. Au sein de la nomenclature d'activités française de l'Insee, sont considérés comme culturels les secteurs suivants :  
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","635a0251dc41dc073190f68f","Emploi : Actifs des secteurs culturels par zone d'emploi","Part des actifs des secteurs culturels dans l'ensemble des actifs de la zone d'emploi. La population concernée rassemble les actifs en emploi, qu'ils soient salariés ou indépendants. Au sein de la nomenclature d'activités française de l'Insee, sont considérés comme culturels les secteurs suivants :  
 \- architecture  
 \- arts visuels  
 \- audiovisuel, multimédia  
@@ -129,7 +129,7 @@ Données 2017","culture;deps-doc;ministeredelaculture","2022-10-27T06:00:17.8960
 \- spectacle vivant
 
 Données 2017","culture;deps-doc;ministeredelaculture","2022-10-27T06:00:17.471000+00:00","2025-11-05T16:22:26.291000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","635a0251dc41dc073190f690","Entreprises : Salariés des secteurs culturels par région","Part des salariés des entreprises des secteurs culturels dans l'ensemble des actifs de la région. Au sein de la nomenclature d'activités française de l'Insee, sont considérés comme culturels les secteurs suivants :  
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","635a0251dc41dc073190f690","Entreprises : Salariés des secteurs culturels par région","Part des salariés des entreprises des secteurs culturels dans l'ensemble des actifs de la région. Au sein de la nomenclature d'activités française de l'Insee, sont considérés comme culturels les secteurs suivants :  
 \- architecture  
 \- arts visuels  
 \- audiovisuel, multimédia  
@@ -140,7 +140,7 @@ Données 2017","culture;deps-doc;ministeredelaculture","2022-10-27T06:00:17.4710
 \- spectacle vivant
 
 Données 2018","culture;deps-doc;ministeredelaculture","2022-10-27T06:00:17.847000+00:00","2025-11-05T16:22:25.053000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","635a0251e708959bd890f68e","Emploi : Actifs des secteurs culturels par département","Part des actifs des secteurs culturels dans l'ensemble des actifs du département. La population concernée rassemble les actifs en emploi, qu'ils soient salariés ou indépendants. Au sein de la nomenclature d'activités française de l'Insee, sont considérés comme culturels les secteurs suivants :   
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","635a0251e708959bd890f68e","Emploi : Actifs des secteurs culturels par département","Part des actifs des secteurs culturels dans l'ensemble des actifs du département. La population concernée rassemble les actifs en emploi, qu'ils soient salariés ou indépendants. Au sein de la nomenclature d'activités française de l'Insee, sont considérés comme culturels les secteurs suivants :   
 \- architecture  
 \- arts visuels   
 \- audiovisuel, multimédia  
@@ -151,7 +151,7 @@ Données 2018","culture;deps-doc;ministeredelaculture","2022-10-27T06:00:17.8470
 \- spectacle vivant
 
 Données 2017","culture;deps-doc;ministeredelaculture","2022-10-27T06:00:17.128000+00:00","2025-11-05T16:22:27.706000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","635a0252f931c40e6390f68f","Emploi : Professions culturelles par zone d'emploi","Part des actifs exerçant une profession culturelle dans l’ensemble des actifs de la zone d'emploi.   
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","635a0252f931c40e6390f68f","Emploi : Professions culturelles par zone d'emploi","Part des actifs exerçant une profession culturelle dans l’ensemble des actifs de la zone d'emploi.   
 La population concernée rassemble les actifs en emploi, qu'ils soient salariés ou indépendants. 
 
 Au sein de la nomenclature des professions et des catégories socioprofessionnelles de l'Insee, sont retenues comme professions culturelles :  
@@ -163,13 +163,13 @@ Au sein de la nomenclature des professions et des catégories socioprofessionnel
 \- professeurs d'art (hors établissements scolaires)
 
 Données 2017","culture;deps-doc;ministeredelaculture","2022-10-27T06:00:18.332000+00:00","2025-11-05T16:22:22.635000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","635a0254f931c40e6390f690","Entreprises : Nombre d'établissements culturels actifs par département","Désigne la part des entreprises culturelles employeuses au sein de l'ensemble des entreprises employeuses de chaque département
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","635a0254f931c40e6390f690","Entreprises : Nombre d'établissements culturels actifs par département","Désigne la part des entreprises culturelles employeuses au sein de l'ensemble des entreprises employeuses de chaque département
 
 Données 2018","culture;deps-doc;ministeredelaculture","2022-10-27T06:00:20.857000+00:00","2025-11-05T16:22:21.431000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","635a02558c0544dea690f690","Entreprises : Salariés des secteurs culturels par zone d'emploi","Part des salariés des secteurs culturels dans l'ensemble des actifs de la zone d'emploi. Au sein de la nomenclature d'activités française de l'Insee, sont considérés comme culturels les secteurs suivants : \- architecture \- arts visuels \- audiovisuel, multimédia \- éducation, formation \- livre et presse \- patrimoine \- publicité \- spectacle vivant
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","635a02558c0544dea690f690","Entreprises : Salariés des secteurs culturels par zone d'emploi","Part des salariés des secteurs culturels dans l'ensemble des actifs de la zone d'emploi. Au sein de la nomenclature d'activités française de l'Insee, sont considérés comme culturels les secteurs suivants : \- architecture \- arts visuels \- audiovisuel, multimédia \- éducation, formation \- livre et presse \- patrimoine \- publicité \- spectacle vivant
 
 Données 2018","culture;deps-doc;ministeredelaculture","2022-10-27T06:00:21.223000+00:00","2025-11-05T16:22:20.164000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","635a0255905f648a9e90f68e","Entreprises : Salariés des secteurs culturels par département","Part des salariés des entreprises des secteurs culturels dans l'ensemble des actifs de la zone d'emploi. Au sein de la nomenclature d'activités française de l'Insee, sont considérés comme culturels les secteurs suivants :   
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","635a0255905f648a9e90f68e","Entreprises : Salariés des secteurs culturels par département","Part des salariés des entreprises des secteurs culturels dans l'ensemble des actifs de la zone d'emploi. Au sein de la nomenclature d'activités française de l'Insee, sont considérés comme culturels les secteurs suivants :   
 \- architecture  
 \- arts visuels   
 \- audiovisuel, multimédia  
@@ -180,7 +180,7 @@ Données 2018","culture;deps-doc;ministeredelaculture","2022-10-27T06:00:21.2230
 \- spectacle vivant
 
 Données 2018","culture;deps-doc;ministeredelaculture","2022-10-27T06:00:21.762000+00:00","2025-11-05T16:22:18.935000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","635a0255ae37fbcc1290f692","Emploi : Professions culturelles par région","Part des actifs exerçant une profession culturelle dans l’ensemble des actifs de la région.
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","635a0255ae37fbcc1290f692","Emploi : Professions culturelles par région","Part des actifs exerçant une profession culturelle dans l’ensemble des actifs de la région.
 
 La population concernée rassemble les actifs en emploi, qu'ils soient salariés ou indépendants. 
 
@@ -193,10 +193,10 @@ Au sein de la nomenclature des professions et des catégories socioprofessionnel
 \- professeurs d'art (hors établissements scolaires)
 
 Données 2017","culture;deps-doc;ministeredelaculture","2022-10-27T06:00:21.969000+00:00","2025-11-05T16:22:17.714000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","635a02568c0544dea690f691","Entreprises : Nombre d'établissements culturels actifs par zone d'emploi","Désigne la part des entreprises culturelles employeuses au sein de l'ensemble des entreprises employeuses de la zone d'emploi.
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","635a02568c0544dea690f691","Entreprises : Nombre d'établissements culturels actifs par zone d'emploi","Désigne la part des entreprises culturelles employeuses au sein de l'ensemble des entreprises employeuses de la zone d'emploi.
 
 Données 2018","culture;deps-doc;ministeredelaculture","2022-10-27T06:00:22.017000+00:00","2025-11-05T16:22:16.466000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","64ae255bbc600d7a3468ee64","Dépenses culturelles des régions","**Dépenses culturelles des régions en 2023** : dépenses totales, pour collectivité régionale (y compris collectivité territoriale unique de Guyane, Martinique et collectivité de Corse).
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","64ae255bbc600d7a3468ee64","Dépenses culturelles des régions","**Dépenses culturelles des régions en 2023** : dépenses totales, pour collectivité régionale (y compris collectivité territoriale unique de Guyane, Martinique et collectivité de Corse).
 
 **Source** : comptes de gestion 2023 des régions,  Direction générale des finances publiques, ministère chargé de l’Économie, traitement Deps-Doc, ministère de la Culture, 2025
 
@@ -205,7 +205,7 @@ Données 2018","culture;deps-doc;ministeredelaculture","2022-10-27T06:00:22.0170
 
 **Source** : comptes de gestion 2014-2021 des régions, Direction générale des finances publiques, ministère chargé de l’Économie, traitement Deps-Doc, ministère de la Culture, 2023
 ","collectivite-territoriale;culture;culture-locale;depenses-publiques;deps-doc;financement-public;ministeredelaculture;politique-culturelle","2023-07-12T04:00:27.860000+00:00","2026-06-01T17:21:05.844000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","64d30fc7a4b93f07e39f7201","Veille internationale du ministère de la Culture","La Mission de la politique documentaire du ministère de la Culture publie chaque mois en données ouvertes les résultats de sa veille internationale. **  
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","64d30fc7a4b93f07e39f7201","Veille internationale du ministère de la Culture","La Mission de la politique documentaire du ministère de la Culture publie chaque mois en données ouvertes les résultats de sa veille internationale. **  
 **  
 Retrouvez ainsi sous**forme cartographique** une sélection d'articles issus des **acteurs culturels** et de la **presse étrangère** concernant les politiques culturelles des différents pays du monde.  
 
@@ -221,7 +221,7 @@ Corpus :
 Les données des filtres sont classées par ordre alphabétique, **n'hésitez pas à dérouler les listes**. L'affichage du nombre de données étant limité, certaines listes peuvent être tronquées. 
 
 Initiée en avril 2023, cette veille est susceptible d'évolutions : n'hésitez pas à nous contacter pour toute suggestion d'amélioration à l'adresse [diane.gaudron@culture.gouv.fr](mailto:diane.gaudron@culture.gouv.fr?subject=Veille%20internationale%20-%20Data%20culture)","culture;deps-doc;ministeredelaculture;organisations","2023-08-09T04:02:15.097000+00:00","2026-03-17T12:45:06.919000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","6545c1e0bcab951e5a4090dd","Fréquentation des monuments nationaux","Fréquentation des monuments nationaux de 2019 à 2022 : nombre d'entrées payantes, gratuites et totales. Les chiffres sont arrondis à la dizaine.  
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","6545c1e0bcab951e5a4090dd","Fréquentation des monuments nationaux","Fréquentation des monuments nationaux de 2019 à 2022 : nombre d'entrées payantes, gratuites et totales. Les chiffres sont arrondis à la dizaine.  
 
 
 NB : le domaine national de Chambord n'est pas administré par le Centre des monuments nationaux.
@@ -230,14 +230,14 @@ Pour en savoir plus, vous pouvez consulter l'édition 2023 de [Patrimostat](http
 
 
 Source : Centre des monuments nationaux, Deps-doc, 2023.","culture;deps-doc;ministeredelaculture;monuments-historiques;patrimoine;sites-patrimoniaux","2023-11-04T04:00:32.182000+00:00","2026-02-26T13:21:28.952000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","67f7424b137aad8bcb9ac731","Données du système de déclaration de billetterie du spectacle vivant Sibil","Le dispositif SIBIL (ou Système d’Information BILletterie) a été conçu en 2018 par la direction générale de la création artistique du ministère de la Culture afin de faciliter la transmission des données de billetterie des entrepreneurs du spectacle vivant, encadrée par la loi du 7 juillet 2016 relative à la liberté de la création, à l’architecture et au patrimoine (LCAP).
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","67f7424b137aad8bcb9ac731","Données du système de déclaration de billetterie du spectacle vivant Sibil","Le dispositif SIBIL (ou Système d’Information BILletterie) a été conçu en 2018 par la direction générale de la création artistique du ministère de la Culture afin de faciliter la transmission des données de billetterie des entrepreneurs du spectacle vivant, encadrée par la loi du 7 juillet 2016 relative à la liberté de la création, à l’architecture et au patrimoine (LCAP).
 
 À la fin de chaque trimestre civil, avant le dixième jour du mois suivant, tous les entrepreneurs de spectacles, responsables de la billetterie, doivent transmettre dans Sibil les données relatives aux représentations du trimestre écoulé. Celles-ci sont recueillies par le département des études, de la prospective, des statistiques et de la documentation (DEPS) du ministère de la Culture, qui en assure le traitement, dans le respect du secret statistique et des autres secrets prévus par la loi, garantissant leur anonymat et leur confidentialité.
 
 Pour des raisons ayant trait au secret des affaires, le détail des spectacles et des représentations déclarées a été exclu de cette diffusion, selon l’avis n° 20235072 du 12 octobre 2023 de la Commission d’accès aux documents administratifs, à savoir les champs relatifs à la billetterie, aux tarifs et aux recettes : « total billetterie » ; « total recette TTC » ; « prix moyen total billetterie » ; « nombre billets plein tarif » ; « recette plein tarif » ; « prix moyen plein tarif » ; « nombre billets abonnements », « forfaits et adhésions » ; « nombre billets exonérés ou gratuits ».
 
-Ces données donnent également lieu à des publications annuelles de la part du DEPS téléchargeables sur le site web du ministère de la Culture.","culture;deps-doc;ministeredelaculture","2025-04-10T04:00:11.071000+00:00","2026-06-14T15:04:29.761000+00:00",""
-"2026-06-15T10:21:51.769009+00:00","univers-culture-deps","6a11bacd77a67baa26b8cecd","Catalogue topic univers-culture-deps","Ce dataset documente le contenu du topic [univers-culture-deps](https://www.data.gouv.fr/topics/univers-culture-deps/) à des fins de contextualisation par des outils d'exploration des données : agents conversationnels, serveurs MCP, scripts d'analyse, dashboards.
+Ces données donnent également lieu à des publications annuelles de la part du DEPS téléchargeables sur le site web du ministère de la Culture.","culture;deps-doc;ministeredelaculture","2025-04-10T04:00:11.071000+00:00","2026-06-21T15:03:40.214000+00:00",""
+"2026-06-22T09:46:20.461788+00:00","univers-culture-deps","6a11bacd77a67baa26b8cecd","Catalogue topic univers-culture-deps","Ce dataset documente le contenu du topic [univers-culture-deps](https://www.data.gouv.fr/topics/univers-culture-deps/) à des fins de contextualisation par des outils d'exploration des données : agents conversationnels, serveurs MCP, scripts d'analyse, dashboards.
 
 Il contient deux ressources complémentaires, jointes par la colonne `id.dataset` :
 
