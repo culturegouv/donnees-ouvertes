@@ -1,0 +1,72 @@
+"""
+Titre : Extraction des tags des jeux de données du DEPS
+
+Description :
+Ce script interroge l’API de data.gouv.fr afin de récupérer l’ensemble des
+jeux de données portant le tag « deps-doc ».
+
+Il extrait tous les tags associés à ces jeux, compte le nombre de jeux dans
+lesquels chaque tag est utilisé, puis génère un fichier CSV.
+
+La pagination de l’API est parcourue automatiquement.
+
+Source :
+https://www.data.gouv.fr/api/2/datasets/?tag=deps-doc
+
+Fichier généré :
+tags_deps_doc.csv
+
+Colonnes du fichier CSV :
+- tag : identifiant du tag ;
+- nombre_de_jeux : nombre de jeux de données utilisant ce tag.
+"""
+
+from collections import Counter
+import csv
+
+import requests
+
+
+API_URL = "https://www.data.gouv.fr/api/2/datasets/?tag=deps-doc"
+OUTPUT_FILE = "tags_deps_doc.csv"
+
+tag_counts = Counter()
+url = API_URL
+
+
+# Parcours de toutes les pages de résultats de l’API
+while url:
+    response = requests.get(url, timeout=30)
+    response.raise_for_status()
+    payload = response.json()
+
+    for dataset in payload.get("data", []):
+        # set() évite de compter deux fois un même tag
+        # s’il apparaissait plusieurs fois dans un même jeu.
+        tag_counts.update(set(dataset.get("tags", [])))
+
+    url = payload.get("next_page")
+
+
+# Affichage des résultats dans le terminal
+for tag, count in sorted(tag_counts.items()):
+    print(f"{tag}: {count}")
+
+
+# Génération du fichier CSV
+with open(
+    OUTPUT_FILE,
+    mode="w",
+    encoding="utf-8-sig",
+    newline="",
+) as csv_file:
+    writer = csv.writer(csv_file, delimiter=";")
+
+    writer.writerow(["tag", "nombre_de_jeux"])
+
+    for tag, count in sorted(tag_counts.items()):
+        writer.writerow([tag, count])
+
+
+print(f"\nFichier CSV généré : {OUTPUT_FILE}")
+print(f"Nombre de tags différents : {len(tag_counts)}")
