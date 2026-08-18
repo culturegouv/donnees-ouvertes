@@ -1,4 +1,4 @@
-Le dossier archive contient les workflows qui ne sont plus utilisés et qui doivent faire l’objet d’une revue annuelle afin de déterminer s’ils peuvent être supprimés.
+Le répertoire .github/decommissionnement contient les workflows qui ne sont plus utilisés et qui doivent faire l’objet d’une revue annuelle afin de déterminer s’ils peuvent être supprimés.
 
 Chaque workflow archivé doit comporter en en-tête les informations suivantes :
 
