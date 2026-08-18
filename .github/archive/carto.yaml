@@ -1,7 +1,11 @@
-# Archive du workflow : Update geozones GPKG
+# Workflow archivé : Update geozones GPKG
 # Date d'archivage : 18/08/2026
-# Si absence utilisation, suppression : 01/11/2026
-
+# Motif : workflow désormais inutilisé
+# Suppression prévue le 01/11/2026 en l'absence de besoin de réactivation
+#
+# Fichiers associés :
+#   - script/generator_EPSG_gpkg.py
+#   - data/geozones.gpkg
 name: Update geozones GPKG
 
 on:
