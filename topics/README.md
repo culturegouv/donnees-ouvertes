@@ -6,10 +6,10 @@ https://www.data.gouv.fr/api/2/topics/?organization=534fff91a3a7292c64a77f73
 
 ### univers-ministere-culture
 ID : 6a84700a0fa17b5ccf09a7b1
-Description : Topic dédié aux jeux de données produits par le ministère de la Culture.
+Description : topic dédié aux jeux de données produits par le ministère de la Culture.
 ### univers-culture-deps
 ID : 69f2fca0f4f30af95d4bab8a
-Description : Topic dédié au Département des études, de la prospective, des statistiques et de la documentation (DEPS).
+Description : topic dédié au Département des études, de la prospective, des statistiques et de la documentation (DEPS).
 ### univers-culture
 ID : 69aea5dff97ef1fc29836765
-Description : Topic univers pour culture.data.gouv.fr.
+Description : topic univers pour culture.data.gouv.fr.
