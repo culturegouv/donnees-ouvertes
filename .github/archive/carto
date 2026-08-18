@@ -1,0 +1,58 @@
+name: Update geozones GPKG
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "10 1 * * *"  # tous les jours à 01:10 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install GDAL
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gdal-bin
+
+      - name: Build GeoPackage
+        run: |
+          set -euo pipefail
+          mkdir -p data
+
+          # Le fichier est nommé .py mais c'est bien un script bash
+          bash script/generator_EPSG_gpkg.py
+
+          # Déplacement du résultat dans le dossier attendu
+          mv -f geozones.gpkg data/geozones.gpkg
+
+      - name: Validate output
+        run: |
+          set -euo pipefail
+          test -f data/geozones.gpkg
+          ogrinfo -so data/geozones.gpkg geozones
+
+      - name: Commit & push if files changed
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/geozones.gpkg
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore(data): update geozones gpkg"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
