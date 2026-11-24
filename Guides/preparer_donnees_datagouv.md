@@ -169,6 +169,58 @@ Utiliser `code_commune`. Le **code postal** n'est pas recommandé car un même c
 Format de cellule → Spécial → Code postal
 ```
 
+### Coordonnées géographiques
+
+Afin de favoriser l'**interopérabilité des données**, leur réutilisation et leur exploitation par les outils de cartographie, il est recommandé, pour la diffusion de données tabulaires sur data.gouv.fr, de privilégier le système de coordonnées géographiques **WGS 84 (EPSG:4326)**.
+
+Ce système permet une représentation homogène à l'échelle nationale, y compris dans les territoires ultramarins, et internationale. Cette préconisation de diffusion ne se substitue pas aux dispositions réglementaires relatives aux systèmes nationaux de référence de coordonnées ni aux exigences des schémas de données applicables.
+
+#### Structuration des coordonnées
+
+Il est recommandé de répartir les coordonnées dans **deux colonnes distinctes** :
+
+| Nom du champ | Description | Format |
+|---|---|---|
+| `latitude` | Latitude WGS 84 | Nombre décimal |
+| `longitude` | Longitude WGS 84 | Nombre décimal |
+
+Bonnes pratiques :
+
+- Exprimer les coordonnées en degrés décimaux, avec un point comme séparateur décimal.
+- Respecter les plages de valeurs : de -90 à +90 pour la latitude et de -180 à +180 pour la longitude.
+- Préserver la précision des coordonnées sources. Lorsque celle-ci le permet, privilégier six décimales, en s'inspirant du Standard Adresse du CNIG, sans créer de précision artificielle.
+- Documenter le système de référence utilisé.
+- Laisser les cellules vides lorsque les coordonnées ne sont pas renseignées.
+
+#### Représentation agrégée (facultative)
+
+Au besoin, une troisième colonne peut regrouper les deux coordonnées. CSV Detective distingue les formats suivants :
+
+| Format de reconnaissance | Ordre | Exemple |
+|---|---|---|
+| `latlon_wgs` | Latitude, longitude | `48.856600,2.352200` |
+| `lonlat_wgs` | Longitude, latitude | `2.352200,48.856600` |
+
+Cette colonne complémentaire doit être générée à partir des deux colonnes dédiées et ne doit pas s'y substituer. Dans un CSV séparé par des virgules, encadrer la valeur agrégée de guillemets doubles.
+
+| latitude | longitude | latlon_wgs |
+|---|---|---|
+| 48.856600 | 2.352200 | 48.856600,2.352200 |
+
+CSV Detective dispose également des formats de reconnaissance `latitude_wgs` et `longitude_wgs`. Vérifier leur reconnaissance effective après import.
+
+#### Coordonnées dans le système de référence d'origine
+
+Les coordonnées projetées dans le système de référence d'origine, notamment en Lambert-93 pour la France métropolitaine, peuvent être conservées dans des colonnes complémentaires `x` et `y`, en précisant le système de référence associé. Pour les territoires ultramarins, utiliser le système adapté au territoire concerné.
+
+#### Références
+
+- [IGN – Textes réglementaires et systèmes légaux](https://geodesie.ign.fr/textes-et-decrets)
+- [CNIG – Standard Adresse, version du 28 octobre 2024](https://cnig.gouv.fr/IMG/pdf/cnig-standard_adresse-v1-v20241028.pdf)
+- [Documentation de la Base Adresse Nationale](https://doc.adresse.data.gouv.fr/docs/documentation-generale/utiliser-la-base-adresse-nationale/les-fichiers-de-la-base-adresse-nationale)
+- [Formats reconnus par CSV Detective](https://github.com/datagouv/csv-detective/blob/main/docs/formats.md)
+- [Implémentation des détecteurs CSV Detective](https://github.com/datagouv/csv-detective/tree/main/csv_detective/formats)
+
 ---
 
 ## 6. SIRET
